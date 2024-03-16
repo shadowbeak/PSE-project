@@ -1,3 +1,2 @@
 
 #include "Device.h"
-#ikpasietsaan
