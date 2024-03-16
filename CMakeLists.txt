@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(PSE_project
         main.cpp
-        hh.cpp)
+        hh.cpp
+        yo.cpp
+        yo.h)
