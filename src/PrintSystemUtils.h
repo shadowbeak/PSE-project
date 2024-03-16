@@ -11,6 +11,8 @@
 
 
 #include <iostream>
+#include <cctype>
+
 
 bool DirectoryExists(const std::string dirname);
 
@@ -19,5 +21,7 @@ bool FileExists(const std::string dirname);
 bool FileIsEmpty(const std::string filename);
 
 bool FileCompare(const std::string leftFileName, const std::string rightFileName);
+
+bool isInt(const std::string& str);
 
 #endif //PSE_PROJECT_PRINTSYSTEMUTILS_H

@@ -77,3 +77,16 @@ bool FileCompare(const std::string leftFileName, const std::string rightFileName
     rightFile.close();
     return result;
 }
+
+//extra toevoeging
+bool isNum(const std::string& str) {
+    if (str.empty()) {
+        return false;
+    }
+    for (char c : str) {
+        if (!std::isdigit(c)) {
+            return false;
+        }
+    }
+    return true;
+}
