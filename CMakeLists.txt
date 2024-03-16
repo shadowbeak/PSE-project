@@ -10,7 +10,10 @@ add_executable(PSE_project
         src/tinyxmlerror.cpp
         src/tinyxmlparser.cpp
         src/PrintSystemUtils.cpp
-        src/DesignByContract.cpp
+        src/DesignByContract.h
         src/Device.cpp
         src/Job.cpp
+        src/PrintSystem.cpp
+        src/PrintSystem.cpp
+        src/PrintSystem.h
 )
