@@ -47,7 +47,11 @@ void Job::setUserName(const std::string &userName) {
 }
 
 Job::Job(int jobNumber, int pageCount, const std::string &userName) : jobNumber(jobNumber), pageCount(pageCount),
+
+
+
                                                                       userName(userName) {}
+
 
 Job::Job(TiXmlElement *job_element) {
     std::string JN_temp;

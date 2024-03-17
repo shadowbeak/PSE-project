@@ -113,3 +113,32 @@ std::string Device::printReport() const {
     }
     return report.str();
 }
+
+void Device::processJob(Job* job) const {
+    // Check if the job and device are valid
+    REQUIRE(job != nullptr, "Invalid job");
+
+    // Get job details
+    int jobNumber = job->getJobNumber();
+    int pageCount = job->getPageCount();
+    std::string userName = job->getUserName();
+
+    // Print each page
+    for (int i = 1; i <= pageCount; ++i) {
+        std::cout << "Printing page " << i << " of job number " << jobNumber << " submitted by \"" << userName << "\"" << std::endl;
+    }
+
+    // Print job completion message
+    std::cout << "Printer \"" << this->getName() << "\" finished job:" << std::endl;
+    std::cout << "Number: " << jobNumber << std::endl;
+    std::cout << "Submitted by \"" << userName << "\"" << std::endl;
+    std::cout << pageCount << " pages" << std::endl;
+
+    // Set the job as finished
+    job->setFinished(true);
+
+    // Ensure postcondition
+    ENSURE(job->isFinished(), "Job is not finished");
+}
+
+
