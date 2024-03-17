@@ -120,7 +120,7 @@ int Device::getJobBurden() const{
         int addBurden = job->getPageCount();
         jobBurden += addBurden;
     }
-    ENSURE(!isNegative(jobBurden), "Onze burden is negatief." );
+    ENSURE(jobBurden < 0, "Onze burden is negatief." );
 
 }
 
