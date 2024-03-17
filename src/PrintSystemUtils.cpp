@@ -79,12 +79,23 @@ bool FileCompare(const std::string leftFileName, const std::string rightFileName
 }
 
 //extra toevoeging
-bool isNum(const std::string& str) {
+bool isInt(const std::string& str) {
     if (str.empty()) {
         return false;
     }
     for (char c : str) {
         if (!std::isdigit(c)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool isNotInDevice(Job *job, std::vector<Job*> jobs){
+    int job1n = job->getJobNumber();
+    for(Job* j: jobs){
+        int job2n = j->getJobNumber();
+        if(job1n == job2n){
             return false;
         }
     }

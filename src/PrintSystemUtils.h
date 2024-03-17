@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <cctype>
+#include "Device.h"
 
 
 bool DirectoryExists(const std::string dirname);
@@ -23,5 +24,7 @@ bool FileIsEmpty(const std::string filename);
 bool FileCompare(const std::string leftFileName, const std::string rightFileName);
 
 bool isInt(const std::string& str);
+
+bool isNotInDevice(Job *job, std::vector<Job*> jobs);
 
 #endif //PSE_PROJECT_PRINTSYSTEMUTILS_H

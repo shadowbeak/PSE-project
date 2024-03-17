@@ -6,6 +6,7 @@
 #include <vector>
 #include "Job.h"
 #include "PrintSystemUtils.h"
+#include "DesignByContract.h"
 
 
 class Device {
@@ -28,7 +29,7 @@ public:
     void setSpeed(int speed);
     const std::vector<Job *> &getJobs() const;
     void setJobs(const std::vector<Job *> &jobs);
-
+    void addJob(Job *job);
 };
 
 

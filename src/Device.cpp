@@ -74,4 +74,10 @@ const std::vector<Job *> &Device::getJobs() const {
 
 void Device::setJobs(const std::vector<Job *> &jobs) {
     Device::jobs = jobs;
+
 }
+
+void Device::addJob(Job *job){
+    REQUIRE(isNotInDevice(job, jobs), "job heeft jobnummer die al aanwezig is in onze device");
+}
+
