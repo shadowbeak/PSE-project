@@ -23,13 +23,14 @@ public:
 
     void clear();
 
-    void Readfile(const std::string &file_name);
+    void Readfile(const string &filename);
 
     void ReadDevice(TiXmlElement *device_element);
 
     void ReadJob(TiXmlElement *job_element);
 
     bool Initialization() const { return _init == this; }
+
 
     Device *getFirstDevice() const;
 
@@ -54,6 +55,8 @@ public:
     bool VerifyConsistency() const;
 
     Device *getDeviceWithLeastLoad() const;
+
+
 
     void processFirstJob() const;
 
