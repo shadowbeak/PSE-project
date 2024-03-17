@@ -89,3 +89,4 @@ void Device::addJob(Job *job) {
     jobs.push_back(job);
     ENSURE(jobs.back() == job, "Job is niet toegevoegd aan de device.");
 }
+
