@@ -28,6 +28,7 @@ public:
     const std::vector<Job *> &getJobs() const;
     void setJobs(const std::vector<Job *> &jobs);
     void addJob(Job *job);
+    std::string printReport() const;
 };
 
 

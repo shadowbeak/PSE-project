@@ -2,6 +2,7 @@
 #include "Device.h"
 #include "PrintSystemUtils.h"
 #include "DesignByContract.h"
+#include <sstream>
 
 
 
@@ -90,3 +91,24 @@ void Device::addJob(Job *job) {
     ENSURE(jobs.back() == job, "Job is niet toegevoegd aan de device.");
 }
 
+std::string Device::printReport() const {
+    std::stringstream report;
+
+    report << name << " (CO2: " << emission << "g/page):" << std::endl;
+
+    if (!jobs.empty()) {
+        report << "\t* Current:" << std::endl;
+        report << "\t\t[#" << jobs.front()->getJobNumber() << "|" << jobs.front()->getUserName() << "]" << std::endl;
+
+        if (jobs.size() > 1) {
+            report << "\t* Queue:" << std::endl;
+            for (std::vector<Job*>::size_type i = 1; i < jobs.size(); i++) {
+                Job* job = jobs[i];
+                report << "\t\t[#" << job->getJobNumber() << "|" << job->getUserName() << "]" << std::endl;
+            }
+        }
+    } else {
+        report << "\tNo jobs" << std::endl;
+    }
+    return report.str();
+}
