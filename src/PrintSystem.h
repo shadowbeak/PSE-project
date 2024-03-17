@@ -21,6 +21,7 @@ public:
     PrintSystem();
     virtual ~PrintSystem();
 
+
     void clear();
 
     void Readfile(const string &filename);
@@ -56,9 +57,11 @@ public:
 
     Device *getDeviceWithLeastLoad() const;
 
-
-
     void processFirstJob() const;
+
+    //use_case_2 : adam
+
+
 
 private:
     static bool CheckNotNegative(int num);

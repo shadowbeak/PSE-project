@@ -28,10 +28,47 @@ PrintSystem::~PrintSystem() {
 
     devices.clear();  // No need to set pointers to NULL
     jobs.clear();
-
-
     clear();
 }
+
+
+
+std::string PrintSystem::printReport() const {
+
+string filename ="adam";
+    std::ofstream report;
+    report.open(filename);
+    for (size_t i = 0; i < devices.size(); ++i) {
+        report << devices[i]->printReport();
+        if (i != devices.size() - 1)
+            report << "\n";
+    }
+    report.close();
+    return filename;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void PrintSystem::Readfile(const string &filename) {        // Reading data from file
     REQUIRE(FileExists(filename), "File does not exist.");  // Checking if file exist
