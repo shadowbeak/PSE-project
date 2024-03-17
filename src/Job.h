@@ -5,15 +5,17 @@
 #include <iostream>
 #include "tinyxml.h"
 
-
+class Device;
 
 class Job {
 private:
     int jobNumber;
     int pageCount;
+    std::string userName;
     bool finished = false;
     bool inProcess = false;
-    std::string userName;
+    Device* beingWorkedOnBy = NULL;
+
 public:
     //constructors en destructor
     Job(int jobNumber, int pageCount, const std::string &userName);
@@ -32,8 +34,9 @@ public:
     const std::string &getUserName() const;
     void setUserName(const std::string &userName);
 
+    Device *getBeingWorkedOnBy() const;
 
-
+    void setBeingWorkedOnBy(Device *beingWorkedOnBy);
 
 
 };

@@ -88,7 +88,7 @@ bool isInt(const std::string& str) {
     return true;
 }
 
-bool isNotInDevice(Job *job, std::vector<Job*> jobs){
+bool isNotInDevice(Job *job, std::deque<Job *>& jobs){
     int job1n = job->getJobNumber();
     for(Job* j: jobs){
         int job2n = j->getJobNumber();

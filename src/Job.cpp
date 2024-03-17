@@ -46,6 +46,14 @@ void Job::setUserName(const std::string &userName) {
     Job::userName = userName;
 }
 
+Device *Job::getBeingWorkedOnBy() const {
+    return beingWorkedOnBy;
+}
+
+void Job::setBeingWorkedOnBy(Device *beingWorkedOnBy) {
+    Job::beingWorkedOnBy = beingWorkedOnBy;
+}
+
 Job::Job(int jobNumber, int pageCount, const std::string &userName) : jobNumber(jobNumber), pageCount(pageCount),
 
 
@@ -59,10 +67,10 @@ Job::Job(TiXmlElement *job_element) {
     std::string UN_temp;
 
     TiXmlNode *node = job_element->FirstChild();
-    while (node != nullptr) {
+    while (node != NULL) {
 
         TiXmlNode *childNode = node->FirstChild();
-        if (childNode != nullptr) {
+        if (childNode != NULL) {
 
             std::string nodeName = node->Value();
             std::string nodeValue = childNode->Value();

@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include "Job.h"
+#include <deque>
 
 
 class Device {
@@ -12,10 +13,11 @@ private:
     std::string name;
     int emission;
     int speed;
-    std::vector<Job*> jobs;
+    std::deque<Job *> jobs;
+
 public:
     //constructors
-    Device(const std::string &name, int emission, int speed, const std::vector<Job *> &jobs);
+    Device(const std::string &name, int emission, int speed, const std::deque<Job *>  &jobs);
     explicit Device(TiXmlElement *device_node);
     virtual ~Device();
 
@@ -26,11 +28,12 @@ public:
     void setEmission(int emission);
     int getSpeed() const;
     void setSpeed(int speed);
-    const std::vector<Job *> &getJobs() const;
-    void setJobs(const std::vector<Job *> &jobs);
+    const std::deque<Job *>  &getJobs() const;
+    void setJobs(const std::deque<Job *>  &jobs);
     void addJob(Job *job);
     std::string printReport() const;
     void processJob(Job* job) const;
+    int getJobBurden() const;
 
 
 };

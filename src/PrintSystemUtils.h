@@ -25,7 +25,7 @@ bool FileCompare(const std::string leftFileName, const std::string rightFileName
 
 bool isInt(const std::string& str);
 
-bool isNotInDevice(Job *job, std::vector<Job*> jobs);
+bool isNotInDevice(Job *job, std::deque<Job*>& jobs);
 
 bool isNegative(int value);
 

@@ -28,6 +28,10 @@ public:
     void Readfile(const string &filename);
     //use_case_2 :
     std::string printReport() const;
+    Device* getLeastBurdened() const;
+    Device* deviceAssignment(Job *job) const;
+    void assignEverything() const;
+
 
 
     //void clear();

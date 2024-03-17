@@ -13,13 +13,17 @@ using namespace std;
 PrintSystem::PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs) : devices(devices), jobs(jobs) {}
 
 PrintSystem::~PrintSystem() {
-    for (Device* device : devices) {
+    for (Device* &device : devices) {
         delete device;
     }
-    for (Job* job : jobs) {
+    devices.clear();
+    for (Job* &job : jobs) {
         delete job;
     }
+    jobs.clear();
 }
+
+
 std::string PrintSystem::printReport() const {
     string reportExtension = ".txt";
     string storageDirectory = "reports/";
@@ -42,7 +46,7 @@ void PrintSystem::Readfile(const string &filename) {        // Reading data from
 
     TiXmlDocument doc;
     if (!doc.LoadFile(filename.c_str())) {
-        cerr << doc.ErrorDesc() << "miauw" << endl;
+        cerr << doc.ErrorDesc() << endl;
         return;
     }
 
@@ -84,6 +88,57 @@ void PrintSystem::ReadJob(TiXmlElement *jobElement) {
 
     ENSURE(!jobs.empty(), "Er werden geen jobs gelezen uit onze xml file.");
 }
+
+Device* PrintSystem::getLeastBurdened() const{
+    REQUIRE(!devices.empty(), "Er werden geen devices gevonden");
+    Device *leastBurdenedDevice = devices.front();
+
+    for (Device *device : devices) {
+        if (device->getJobBurden() < leastBurdenedDevice->getJobBurden()) {
+            leastBurdenedDevice = device;
+        }
+    }
+    return leastBurdenedDevice;
+}
+
+
+
+Device* PrintSystem::deviceAssignment(Job *job) const{
+    REQUIRE(!devices.empty(), "Er werden geen devices gevonden");
+    REQUIRE(job->getBeingWorkedOnBy() == NULL, "Er wordt al aan deze job gewerkt in een ander device.");
+
+    Device* device = getLeastBurdened();
+    device->addJob(job);
+    job ->setBeingWorkedOnBy(device);
+    return device;
+}
+
+void PrintSystem::assignEverything() const{
+    REQUIRE(!devices.empty(), "No devices were found");
+    REQUIRE(!jobs.empty(), "No jobs were found");
+
+    for(Job* job: jobs){
+        if(job->getBeingWorkedOnBy() == NULL){
+            deviceAssignment(job);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 PrintSystem::PrintSystem() {}
 

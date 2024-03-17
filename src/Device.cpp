@@ -7,7 +7,7 @@
 
 
 
-Device::Device(const std::string &name, int emission, int speed, const std::vector<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
+Device::Device(const std::string &name, int emission, int speed, const std::deque<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
 Device::Device(TiXmlElement *device_node) {
     std::string NA_temp;
     std::string EM_temp;
@@ -77,11 +77,11 @@ void Device::setSpeed(int speed) {
     Device::speed = speed;
 }
 
-const std::vector<Job *> &Device::getJobs() const {
+const std::deque<Job *>  &Device::getJobs() const {
     return jobs;
 }
 
-void Device::setJobs(const std::vector<Job *> &jobs) {
+void Device::setJobs(const std::deque<Job *>  &jobs) {
     Device::jobs = jobs;
 
 }
@@ -114,9 +114,34 @@ std::string Device::printReport() const {
     return report.str();
 }
 
+int Device::getJobBurden() const{
+    int jobBurden = 0;
+    for(Job* job: jobs){
+        int addBurden = job->getPageCount();
+        jobBurden += addBurden;
+    }
+    ENSURE(!isNegative(jobBurden), "Onze burden is negatief." );
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void Device::processJob(Job* job) const {
     // Check if the job and device are valid
-    REQUIRE(job != nullptr, "Invalid job");
+    REQUIRE(job != NULL, "Invalid job");
 
     // Get job details
     int jobNumber = job->getJobNumber();
