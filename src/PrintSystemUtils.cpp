@@ -101,3 +101,7 @@ bool isNotInDevice(Job *job, std::vector<Job*> jobs){
     }
     return true;
 }
+
+bool isNegative(int value) {
+    return value < 0;
+}

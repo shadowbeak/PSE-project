@@ -27,4 +27,6 @@ bool isInt(const std::string& str);
 
 bool isNotInDevice(Job *job, std::vector<Job*> jobs);
 
+bool isNegative(int value);
+
 #endif //PSE_PROJECT_PRINTSYSTEMUTILS_H

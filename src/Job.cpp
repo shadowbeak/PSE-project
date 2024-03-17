@@ -1,11 +1,15 @@
 
 #include "Job.h"
+#include "PrintSystemUtils.h"
+#include "DesignByContract.h"
+
 
 int Job::getJobNumber() const {
     return jobNumber;
 }
 
 void Job::setJobNumber(int jobNumber) {
+    REQUIRE(!isNegative(jobNumber), "JobNumber mag niet negatief.");
     Job::jobNumber = jobNumber;
 }
 
@@ -14,6 +18,7 @@ int Job::getPageCount() const {
 }
 
 void Job::setPageCount(int pageCount) {
+    REQUIRE(!isNegative(pageCount), "PageCount mag niet negatief.");
     Job::pageCount = pageCount;
 }
 

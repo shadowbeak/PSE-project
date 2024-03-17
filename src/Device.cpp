@@ -1,5 +1,10 @@
 
 #include "Device.h"
+#include "PrintSystemUtils.h"
+#include "DesignByContract.h"
+
+
+
 
 Device::Device(const std::string &name, int emission, int speed, const std::vector<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
 
@@ -57,6 +62,7 @@ int Device::getEmission() const {
 }
 
 void Device::setEmission(int emission) {
+    REQUIRE(!isNegative(emission), "Emission mag niet negatief zijn.");
     Device::emission = emission;
 }
 
@@ -65,6 +71,7 @@ int Device::getSpeed() const {
 }
 
 void Device::setSpeed(int speed) {
+    REQUIRE(!isNegative(speed), "Speed mag niet negatief zijn.");
     Device::speed = speed;
 }
 
@@ -77,7 +84,8 @@ void Device::setJobs(const std::vector<Job *> &jobs) {
 
 }
 
-void Device::addJob(Job *job){
+void Device::addJob(Job *job) {
     REQUIRE(isNotInDevice(job, jobs), "job heeft jobnummer die al aanwezig is in onze device");
+    jobs.push_back(job);
+    ENSURE(jobs.back() == job, "Job is niet toegevoegd aan de device.");
 }
-
