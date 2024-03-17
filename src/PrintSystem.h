@@ -9,64 +9,50 @@
 #include <string>
 #include <algorithm>
 #include "tinyxml.h"
-#include "Device.h"
-#include "Job.h"
+
+
 using namespace std;
 
-class PrintSystem
-{
+class Device;
+class Job;
+
+class PrintSystem{
+private:
+    std::vector<Device *> devices;
+    std::vector<Job *> jobs;
+
 public:
+    PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs);
     PrintSystem();
     virtual ~PrintSystem();
 
-
-    void clear();
-
+    void ReadJob(TiXmlElement *jobElement);
+    void ReadDevice(TiXmlElement *deviceElement);
     void Readfile(const string &filename);
-
-    void ReadDevice(TiXmlElement *device_element);
-
-    void ReadJob(TiXmlElement *job_element);
-
-    bool Initialization() const { return _init == this; }
-
-
-    Device *getFirstDevice() const;
-
-    Job *getFirstJob() const;
-
-    Job *getFirstUnfinishedJob() const;
-
-    Job *getFirstUnprocessedJob() const;
-
-    const vector<Device *> &getDevices() const;
-
-    const vector<Job *> &getJobs() const;
-
-    vector<Job *> getUnfinishedJobs() const;
-
-    bool isLogErrors() const;
-
-    void setLogErrors(bool logErrors);
-
-    bool VerifyConsistency() const;
-
-    Device *getDeviceWithLeastLoad() const;
-
-    void processFirstJob() const;
-
-    //use_case_2 : adam
+    //use_case_2 :
     std::string printReport() const;
 
 
-private:
-    static bool CheckNotNegative(int num);
+    //void clear();
+    //void ReadJob(TiXmlElement *job_element);
+    //bool Initialization() const { return _init == this; }
+    //Device *getFirstDevice() const;
+    //Job *getFirstJob() const;
+    //Job *getFirstUnfinishedJob() const;
+    //Job *getFirstUnprocessedJob() const;
+    //const vector<Device *> &getDevices() const;
+    //const vector<Job *> &getJobs() const;
+    //vector<Job *> getUnfinishedJobs() const;
+    //bool isLogErrors() const;
+    //void setLogErrors(bool logErrors);
+    //bool VerifyConsistency() const;
+    //Device *getDeviceWithLeastLoad() const;
+    //void processFirstJob() const;
 
-private:
-    PrintSystem* _init;
-    std::vector<Device *> devices;
-    std::vector<Job *> jobs;
-    bool log_errors;
+
+    //atrribute:
+    //static bool CheckNotNegative(int num);
+    //PrintSystem* _init;
 };
 
 

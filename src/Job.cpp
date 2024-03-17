@@ -89,3 +89,5 @@ Job::Job(TiXmlElement *job_element) {
     EXPECT(!UN_temp.empty(), "Geen userName opgegeven.");
     userName = UN_temp;
 }
+
+Job::~Job() {}

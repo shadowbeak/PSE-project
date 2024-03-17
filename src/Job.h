@@ -15,9 +15,10 @@ private:
     bool inProcess = false;
     std::string userName;
 public:
+    //constructors en destructor
     Job(int jobNumber, int pageCount, const std::string &userName);
     explicit Job(TiXmlElement *jobElement);
-
+    virtual ~Job();
 
     //getters and setters
     int getJobNumber() const;

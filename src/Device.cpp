@@ -7,8 +7,8 @@
 
 
 
-Device::Device(const std::string &name, int emission, int speed, const std::vector<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
 
+Device::Device(const std::string &name, int emission, int speed, const std::vector<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
 Device::Device(TiXmlElement *device_node) {
     std::string NA_temp;
     std::string EM_temp;
@@ -48,6 +48,8 @@ Device::Device(TiXmlElement *device_node) {
     EXPECT(!SP_temp.empty(), "Geen speed opgegeven.");
     EXPECT(isInt(SP_temp) , "Speed moet een integer zijn.");
 }
+
+Device::~Device() {}
 
 //getters and setters
 const std::string &Device::getName() const {

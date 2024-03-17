@@ -9,30 +9,19 @@
 #include <random>
 #include "PrintSystemUtils.h"
 #include "DesignByContract.h"
+#include "Device.h"
 using namespace std;
 
-
-
-PrintSystem::PrintSystem() {
-
-}
+PrintSystem::PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs) : devices(devices), jobs(jobs) {}
 
 PrintSystem::~PrintSystem() {
-    std::for_each(devices.begin(), devices.end(), [](Device *device) {
-        delete device;  // Assuming Device has a virtual destructor
-    });
-
-    std::for_each(jobs.begin(), jobs.end(), [](Job *job) {
-        delete job;     // Assuming Job is allocated with new
-    });
-
-    devices.clear();  // No need to set pointers to NULL
-    jobs.clear();
-    clear();
+    for (Device* device : devices) {
+        delete device;
+    }
+    for (Job* job : jobs) {
+        delete job;
+    }
 }
-
-
-
 std::string PrintSystem::printReport() const {
     string reportExtension = ".txt";
     string storageDirectory = "reports/";
@@ -50,35 +39,12 @@ string filename = constructFilename(storageDirectory,reportExtension);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void PrintSystem::Readfile(const string &filename) {        // Reading data from file
     REQUIRE(FileExists(filename), "File does not exist.");  // Checking if file exist
 
     TiXmlDocument doc;
-    if (!doc.LoadFile("filename")) {
-        cerr << doc.ErrorDesc() << endl;
+    if (!doc.LoadFile(filename.c_str())) {
+        cerr << doc.ErrorDesc() << "miauw" << endl;
         return;
     }
 
@@ -87,7 +53,6 @@ void PrintSystem::Readfile(const string &filename) {        // Reading data from
         cerr << "Failed to read the file: No SYSTEM root." << endl;
         return;
     }
-
     for (TiXmlElement *elem = root->FirstChildElement(); elem != nullptr; elem = elem->NextSiblingElement())
     {
         if (string(elem->Value()) == "DEVICE") {
@@ -100,35 +65,32 @@ void PrintSystem::Readfile(const string &filename) {        // Reading data from
             continue;
         }
     }
-
-    VerifyConsistency();
     doc.Clear();
 }
 
-void PrintSystem::ReadDevice(TiXmlElement *device_element) {
-    // Check if device_element is not NULL
-    REQUIRE(device_element != nullptr, "device_element is a NULL pointer");
 
-    try {
-        // Attempt to create a new Device object
-        Device* device = new Device(device_element);
-        devices.push_back(device);
+void PrintSystem::ReadDevice(TiXmlElement *deviceElement) {
+    REQUIRE(deviceElement != NULL, "DeviceElement is een null pointer");
 
-        // Ensure that devices vector is not empty after reading XML file
-        ENSURE(!devices.empty(), "No devices were read after reading xml file");
-    }
-    catch (const std::runtime_error& error) {
-        // Handle runtime errors
-        switch (log_errors) {
-            case true:
-                std::cerr << error.what() << std::endl;
-                break;
-            case false:
-                // If logging errors is disabled, just return
-                return;
-        }
-    }
+    Device* device = new Device(deviceElement);
+    devices.push_back(device);
+
+    ENSURE(!devices.empty(), "Er werden geen devices gelezen uit onze xml file.");
 }
+
+void PrintSystem::ReadJob(TiXmlElement *jobElement) {
+    REQUIRE(jobElement != NULL,"JobElement is een null pointer");
+
+    Job* job = new Job(jobElement);
+    jobs.push_back(job);
+
+    ENSURE(!jobs.empty(), "Er werden geen jobs gelezen uit onze xml file.");
+}
+
+PrintSystem::PrintSystem() {}
+
+
+
 
 
 

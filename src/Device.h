@@ -17,6 +17,7 @@ public:
     //constructors
     Device(const std::string &name, int emission, int speed, const std::vector<Job *> &jobs);
     explicit Device(TiXmlElement *device_node);
+    virtual ~Device();
 
     //getters and setters
     const std::string &getName() const;
@@ -29,6 +30,7 @@ public:
     void setJobs(const std::vector<Job *> &jobs);
     void addJob(Job *job);
     std::string printReport() const;
+
 };
 
 
