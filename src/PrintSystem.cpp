@@ -48,17 +48,50 @@ void PrintSystem::Readfile(const string &filename) {        // Reading data from
         return;
     }
 
-    for (TiXmlElement* elem = root->FirstChildElement(); elem != nullptr; elem = elem->NextSiblingElement())
+    for (TiXmlElement *elem = root->FirstChildElement(); elem != nullptr; elem = elem->NextSiblingElement())
     {
-
-        string elemName = elem->Value();
-        if (elemName == "DEVICE")
-            ReadDevice(elemName)
+        if (string(elem->Value()) == "DEVICE") {
+            ReadDevice(elem);
+        } else if (string(elem->Value()) == "JOB") {
+            ReadJob(elem);
+        }
+        else{
+            std::cerr << "Unrecognizable element"<<std::endl;
+            continue;
+        }
     }
 
     VerifyConsistency();
     doc.Clear();
 }
+
+void PrintSystem::ReadDevice(TiXmlElement *device_element) {
+    // Check if device_element is not NULL
+    REQUIRE(device_element != nullptr, "device_element is a NULL pointer");
+
+    try {
+        // Attempt to create a new Device object
+        Device* device = new Device(device_element);
+        devices.push_back(device);
+
+        // Ensure that devices vector is not empty after reading XML file
+        ENSURE(!devices.empty(), "No devices were read after reading xml file");
+    }
+    catch (const std::runtime_error& error) {
+        // Handle runtime errors
+        switch (log_errors) {
+            case true:
+                std::cerr << error.what() << std::endl;
+                break;
+            case false:
+                // If logging errors is disabled, just return
+                return;
+        }
+    }
+}
+
+
+
 
 
 
