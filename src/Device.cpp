@@ -1,4 +1,3 @@
-
 #include "Device.h"
 #include "PrintSystemUtils.h"
 #include "DesignByContract.h"
