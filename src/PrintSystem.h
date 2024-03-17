@@ -11,8 +11,6 @@
 #include "tinyxml.h"
 #include "Device.h"
 #include "Job.h"
-
-static const std::string REPORT_FILE_EXTENSION = ".txt";
 using namespace std;
 
 class PrintSystem
@@ -51,8 +49,6 @@ public:
 
     void setLogErrors(bool logErrors);
 
-    string printReport() const;
-
     bool VerifyConsistency() const;
 
     Device *getDeviceWithLeastLoad() const;
@@ -60,7 +56,7 @@ public:
     void processFirstJob() const;
 
     //use_case_2 : adam
-
+    std::string printReport() const;
 
 
 private:

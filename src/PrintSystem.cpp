@@ -34,8 +34,10 @@ PrintSystem::~PrintSystem() {
 
 
 std::string PrintSystem::printReport() const {
+    string reportExtension = ".txt";
+    string storageDirectory = "reports/";
 
-string filename ="adam";
+string filename = constructFilename(storageDirectory,reportExtension);
     std::ofstream report;
     report.open(filename);
     for (size_t i = 0; i < devices.size(); ++i) {
@@ -46,6 +48,7 @@ string filename ="adam";
     report.close();
     return filename;
 }
+
 
 
 
