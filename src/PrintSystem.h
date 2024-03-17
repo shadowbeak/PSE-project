@@ -1,6 +1,3 @@
-//
-// Created by noahm on 16/03/2024.
-//
 
 #ifndef PSE_PROJECT_PRINTSYSTEM_H
 #define PSE_PROJECT_PRINTSYSTEM_H
@@ -48,7 +45,6 @@ public:
     //bool VerifyConsistency() const;
     //Device *getDeviceWithLeastLoad() const;
     //void processFirstJob() const;
-
 
     //atrribute:
     //static bool CheckNotNegative(int num);

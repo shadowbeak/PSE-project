@@ -79,7 +79,7 @@ void PrintSystem::ReadDevice(TiXmlElement *deviceElement) {
 }
 
 void PrintSystem::ReadJob(TiXmlElement *jobElement) {
-    REQUIRE(jobElement != NULL,"JobElement is een null pointer");
+    REQUIRE(jobElement != NULL, "JobElement is een null pointer");
 
     Job* job = new Job(jobElement);
     jobs.push_back(job);
