@@ -6,16 +6,9 @@
 // Description : TicTactToe in C++, Ansi-style
 //============================================================================
 
-
-
-
-
-
-#include <iostream>
 #include <fstream>
 #include <sys/stat.h>
 
-using namespace std;
 
 #include "PrintSystemUtils.h"
 #include <ctime>
@@ -34,7 +27,7 @@ bool DirectoryExists(const std::string dirname) {
 bool FileExists(const std::string filename) {
     struct stat st;
     if (stat(filename.c_str(), &st) != 0) return false;
-    ifstream f(filename);
+    std::ifstream f(filename);
     if (f.good()) {
         f.close();
         return true;
@@ -51,7 +44,7 @@ bool FileIsEmpty(const std::string filename) {
 }
 
 bool FileCompare(const std::string leftFileName, const std::string rightFileName) {
-    ifstream leftFile, rightFile;
+    std::ifstream leftFile, rightFile;
     char leftRead, rightRead;
     bool result;
 
@@ -110,7 +103,7 @@ bool isNegative(int value) {
     return value < 0;
 }
 
-std::string constructFilename(const std::string& storageDirectory, const string& reportExtension){
+std::string constructFilename(const std::string& storageDirectory, const std::string& reportExtension){
     std::time_t now = std::time(nullptr);
     std::tm* localTime = std::localtime(&now);
 

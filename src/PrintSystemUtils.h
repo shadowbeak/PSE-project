@@ -29,6 +29,6 @@ bool isNotInDevice(Job *job, std::vector<Job*> jobs);
 
 bool isNegative(int value);
 
-std::string constructFilename(const std::string& storageDirectory, const string& reportExtension);
+std::string constructFilename(const std::string& storageDirectory, const std::string& reportExtension);
 
 #endif //PSE_PROJECT_PRINTSYSTEMUTILS_H
