@@ -8,6 +8,7 @@
 
 
 Device::Device(const std::string &name, int emission, int speed, const std::deque<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
+
 Device::Device(TiXmlElement *device_node) {
     std::string NA_temp;
     std::string EM_temp;
@@ -120,8 +121,8 @@ int Device::getJobBurden() const{
         int addBurden = job->getPageCount();
         jobBurden += addBurden;
     }
-    ENSURE(jobBurden < 0, "Onze burden is negatief." );
-
+    ENSURE(jobBurden >= 0, "Onze burden is negatief." );
+    return jobBurden;
 }
 
 
