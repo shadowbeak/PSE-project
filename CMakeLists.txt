@@ -13,4 +13,6 @@ add_executable(PSE_project
         src/Device.cpp
         src/Job.cpp
         src/PrintSystem.cpp
+        src/TEST.cpp
+        src/vdsv.cpp
 )
