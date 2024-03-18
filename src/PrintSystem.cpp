@@ -96,7 +96,7 @@ Device* PrintSystem::getLeastBurdened() const {
     Device* leastBurdenedDevice = devices.front();
 
     // Iterate through all devices and update the least burdened device if necessary
-    for (auto it = devices.begin() + 1; it != devices.end(); ++it) {
+    for (std::vector<Device*>::const_iterator it  = devices.begin() + 1; it != devices.end(); ++it) {
         if ((*it)->getJobBurden() < leastBurdenedDevice->getJobBurden()) {
             leastBurdenedDevice = *it;
         }
