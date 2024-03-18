@@ -25,8 +25,7 @@ PrintSystem::~PrintSystem() {
 
 
 std::string PrintSystem::printReport() const {
-    string reportExtension = ".txt";
-    string storageDirectory = "reports/";
+    REQUIRE(checkSystem(),"Het PrintSystem bevat oneffenheden.");
 
 string filename = constructFilename(storageDirectory,reportExtension);
     std::ofstream report;
@@ -67,6 +66,7 @@ void PrintSystem::Readfile(const string &filename) {        // Reading data from
             continue;
         }
     }
+    checkSystem();
     doc.Clear();
 }
 
@@ -141,7 +141,36 @@ Job *PrintSystem::getFirstUnprocessedJob() const
 }
 
 
+bool PrintSystem::checkJobs()const{
+    for(Job* const& job:jobs){
+        if(isNegative(job->getJobNumber())){
+            return false;
+        }
+        else if(isNegative(job->getPageCount())){
+            return false;
+        }
+    }
+    return true;
+}
 
+bool PrintSystem::checkDevices()const{
+    for(Device* const& device:devices){
+        if(isNegative(device->getSpeed())){
+            return false;
+        }
+        else if(isNegative(device->getEmission())){
+            return false;
+        }
+    }
+    return true;
+}
+
+bool PrintSystem::checkSystem()const{
+    if(checkJobs() && checkDevices()){
+        return true;
+    }
+    return false;
+}
 
 
 

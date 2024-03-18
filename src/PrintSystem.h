@@ -6,9 +6,11 @@
 #include <string>
 #include <algorithm>
 #include "tinyxml.h"
-
-
 using namespace std;
+
+
+static const string reportExtension = ".txt";
+static const string storageDirectory = "reports/";
 
 class Device;
 class Job;
@@ -33,9 +35,13 @@ public:
     void assignEverything() const;
     void processFirstJob() const;
 
-
     Job *getFirstJob() const;
     Job *getFirstUnprocessedJob() const;
+
+    bool checkJobs()const;
+    bool checkDevices()const;
+    bool checkSystem()const;
+
 
 
 
