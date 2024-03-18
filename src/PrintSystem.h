@@ -15,35 +15,68 @@ static const string storageDirectory = "reports/";
 class Device;
 class Job;
 
+/**
+ * \brief Een klasse die het afdruksysteem vertegenwoordigt
+ * 
+ * Dit systeem beheert afdrukapparaten en printtaken.
+ */
 class PrintSystem{
 private:
-    std::vector<Device *> devices;
-    std::vector<Job *> jobs;
-    std::string log_file_name;
-    bool log = false;
+    std::vector<Device *> devices; /**< Een vector met afdrukapparaten */
+    std::vector<Job *> jobs; /**< Een vector met printtaken */
+    std::string log_file_name; /**< De naam van het logbestand */
+    bool log = false; /**< Geeft aan of loggen is ingeschakeld */
 
 public:
-    PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs);
-    PrintSystem();
-    virtual ~PrintSystem();
+    // Constructors en destructor
+    PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs); 
+    /**< Constructor met parameters */
 
+    PrintSystem(); 
+    /**< Standaardconstructor */
 
-    void ReadJob(TiXmlElement *jobElement);
-    void ReadDevice(TiXmlElement *deviceElement);
-    void Readfile(const string &filename);
-    //use_case_2 :
-    std::string printReport() const;
-    Device* getLeastBurdened() const;
-    Device* deviceAssignment(Job *job) const;
-    void assignEverything() const;
-    void processFirstJob() const;
-    Job *getFirstUnprocessedJob() const;
+    virtual ~PrintSystem(); 
+    /**< Destructor */
 
+    // Methoden voor het lezen van gegevens
+    void ReadJob(TiXmlElement *jobElement); 
+    /**< Leest een printtaak uit een XML-element */
 
-    bool checkJobs()const;
-    bool checkDevices()const;
-    bool checkSystem()const;
+    void ReadDevice(TiXmlElement *deviceElement); 
+    /**< Leest een afdrukapparaat uit een XML-element */
 
+    void Readfile(const string &filename); 
+    /**< Leest gegevens uit een bestand */
+
+    // Methoden voor het afdrukken en verwerken van taken
+    std::string printReport() const; 
+    /**< Geeft een rapport terug over het systeem */
+
+    Device* getLeastBurdened() const; 
+    /**< Geeft het minst belaste apparaat terug */
+
+    Device* deviceAssignment(Job *job) const; 
+    /**< Wijs een taak toe aan een apparaat */
+
+    void assignEverything() const; 
+    /**< Wijs alle taken toe */
+
+    void processFirstJob() const; 
+    /**< Verwerk de eerste taak */
+
+    Job *getFirstUnprocessedJob() const; 
+    /**< Geeft de eerste onverwerkte taak terug */
+
+    // Methoden voor het controleren van de consistentie van het systeem
+    bool checkJobs()const; 
+    /**< Controleert de printtaken */
+
+    bool checkDevices()const; 
+    /**< Controleert de afdrukapparaten */
+
+    bool checkSystem()const; 
+    /**< Controleert het gehele systeem */
+};
 
 
 
