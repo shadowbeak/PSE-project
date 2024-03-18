@@ -1,3 +1,12 @@
+#ifndef PSE_PROJECT_JOB_H
+#define PSE_PROJECT_JOB_H
+
+#include <iostream>
+#include "tinyxml.h"
+using namespace std;
+
+class Device;
+
 /**
  * \brief Een klasse die een afdruktaak vertegenwoordigt
  * 
@@ -34,3 +43,5 @@ public:
     Device *getBeingWorkedOnBy() const; /**< Geeft het apparaat terug waaraan de taak wordt toegewezen */
     void setBeingWorkedOnBy(Device *beingWorkedOnBy); /**< Stelt het apparaat in waaraan de taak wordt toegewezen */
 };
+
+#endif //PSE_PROJECT_JOB_H
