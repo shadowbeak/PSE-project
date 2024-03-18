@@ -31,11 +31,12 @@ public:
     Device* getLeastBurdened() const;
     Device* deviceAssignment(Job *job) const;
     void assignEverything() const;
+    void processFirstJob() const;
 
 
     Job *getFirstJob() const;
     Job *getFirstUnprocessedJob() const;
-    
+
 
 
 

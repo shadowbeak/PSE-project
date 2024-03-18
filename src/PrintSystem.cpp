@@ -140,33 +140,7 @@ Job *PrintSystem::getFirstUnprocessedJob() const
     return NULL;
 }
 
-void PrintSystem::processFirstJob() const {
 
-    REQUIRE(!jobs.empty(), "No jobs were found");
-    REQUIRE(!devices.empty(), "No devices were found");
-    REQUIRE(getFirstUnprocessedJob() != NULL, "All jobs are processed");
-    REQUIRE(getFirstUnprocessedJob()->getAssignedTo() != NULL, "Job is not assigned to a device");
-
-    Job *job = getFirstUnprocessedJob();
-    Device *device = job->getBeingWorkedOnBy();
-    int initialLoad = device->getJobBurden();
-    job->setInProcess(true);
-    std::string message = device->processJob();
-
-    if (!log_file_name.empty() && log)
-    {
-        std::ofstream log_file(log_file_name, std::ios_base::app);
-        log_file << message << std::endl;
-        log_file.close();
-    }
-    else if (log)
-    {
-        std::cout << message << std::endl;
-    }
-
-    ENSURE(job->isFinished(), "Job is not finished");
-    ENSURE(job->getAssignedTo()->getLoad() != initialLoad, "Device did not process the job");
-}
 
 
 
