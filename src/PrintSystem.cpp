@@ -89,15 +89,19 @@ void PrintSystem::ReadJob(TiXmlElement *jobElement) {
     ENSURE(!jobs.empty(), "Er werden geen jobs gelezen uit onze xml file.");
 }
 
-Device* PrintSystem::getLeastBurdened() const{
-    REQUIRE(!devices.empty(), "Er werden geen devices gevonden");
-    Device *leastBurdenedDevice = devices.front();
+Device* PrintSystem::getLeastBurdened() const {
+    REQUIRE(!devices.empty(), "No devices were found.");
 
-    for (Device *device : devices) {
-        if (device->getJobBurden() < leastBurdenedDevice->getJobBurden()) {
-            leastBurdenedDevice = device;
+    // Initialize the least burdened device with the first device
+    Device* leastBurdenedDevice = devices.front();
+
+    // Iterate through all devices and update the least burdened device if necessary
+    for (auto it = devices.begin() + 1; it != devices.end(); ++it) {
+        if ((*it)->getJobBurden() < leastBurdenedDevice->getJobBurden()) {
+            leastBurdenedDevice = *it;
         }
     }
+
     return leastBurdenedDevice;
 }
 
