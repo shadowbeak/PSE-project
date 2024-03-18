@@ -34,6 +34,7 @@ Device::Device(TiXmlElement *device_node) {
             EM_temp = nodeValue;
         } else if (nodeName == "speed") {
             SP_temp = nodeValue;
+
         } else {
             EXPECT(false, "Unknown attribute for Device: '" + nodeName + "'");
         }
@@ -50,6 +51,7 @@ Device::Device(TiXmlElement *device_node) {
 
     EXPECT(!SP_temp.empty(), "Geen speed opgegeven.");
     EXPECT(isInt(SP_temp) , "Speed moet een integer zijn.");
+    speed = stoi(SP_temp);
 }
 
 Device::~Device() {}
