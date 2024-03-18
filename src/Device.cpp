@@ -155,10 +155,12 @@ string Device::processJob() {
     // Werkstatus bijwerken
     job->setInProcess(false);
     job->setFinished(true);
-    jobs.pop_front() ;
+    jobs.pop_front();
+
 
     // Ensure postcondition
     ENSURE(job->isFinished(), "Job is not finished yet");
+
 
     return job->EndMessage();
 }

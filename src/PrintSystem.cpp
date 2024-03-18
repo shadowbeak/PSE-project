@@ -27,7 +27,7 @@ PrintSystem::~PrintSystem() {
 std::string PrintSystem::printReport() const {
 
 
-string filename = constructFilename(storageDirectory,reportExtension);
+string filename = constructFilename("reports/",".txt", "report_");
     std::ofstream report;
     report.open(filename);
     for (size_t i = 0; i < devices.size(); ++i) {
@@ -157,7 +157,7 @@ bool PrintSystem::checkJobs()const{
 }
 
 bool PrintSystem::checkDevices()const{
-    for(Device* const& device:devices){
+    for (Device* const& device:devices){
         if(isNegative(device->getSpeed())){
             return false;
         }
@@ -181,32 +181,48 @@ bool PrintSystem::checkSystem()const{
 
 
 void PrintSystem::processFirstJob() const {
-    REQUIRE(!jobs.empty(), "No jobs were found");
-    REQUIRE(!devices.empty(), "No devices were found");
-    REQUIRE(getFirstUnprocessedJob() != NULL, "All jobs are processed");
-    REQUIRE(getFirstUnprocessedJob()->getBeingWorkedOnBy() != NULL, "Job is not assigned to a device");
+    // Voorwaarden
+    REQUIRE(!jobs.empty(), "Geen taken gevonden");
+    REQUIRE(!devices.empty(), "Geen apparaten gevonden");
+    REQUIRE(getFirstUnprocessedJob() != NULL, "Alle taken zijn verwerkt");
+    REQUIRE(getFirstUnprocessedJob()->getBeingWorkedOnBy() != NULL, "Taak is niet toegewezen aan een apparaat");
 
+    // Haal de eerste onverwerkte taak en het toegewezen apparaat op
     Job *job = getFirstUnprocessedJob();
     Device *device = job->getBeingWorkedOnBy();
-    int initialLoad = device->getJobBurden();
-    job->setInProcess(true);
-    std::string message = device->processJob();
 
-    // Write the message to a file
-    std::ofstream outputFile("output.txt", std::ios_base::app); // Open the file in append mode
-    if (outputFile.is_open()) {
-        outputFile << message << std::endl;
-        outputFile.close();
-        std::cout << "Message written to file successfully." << std::endl;
-    } else {
-        std::cerr << "Error: Unable to open the file." << std::endl;
+    // Bewaar de initiële belasting van het apparaat
+    int initiëleBelasting = device->getJobBurden();
+
+    // Stel de taak in als zijnde verwerkt
+    job->setInProcess(true);
+
+    // Verwerk de taak op het toegewezen apparaat en genereer een bericht
+    std::string bericht = device->processJob();
+
+    // Construeer de bestandsnaam voor het schrijven van het bericht naar een bestand
+    std::string bestandsnaam = constructFilename("procescases/", ".txt", "proces_");
+
+    // Schrijf het bericht naar een bestand
+    std::ofstream outputFile(bestandsnaam, std::ios_base::app);
+    if (!outputFile.is_open()) {
+        throw std::runtime_error("Kan het bestand niet openen.");
     }
 
-    ENSURE(job->isFinished(), "Job is not finished");
-    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initialLoad, "Device did not process the job");
+    try {
+        outputFile << bericht << std::endl;
+        outputFile.close();
+        std::cout << "Bericht succesvol naar bestand geschreven." << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Fout tijdens het schrijven naar het bestand: " << e.what() << std::endl;
+        outputFile.close(); // Sluit het bestand voordat de uitzondering opnieuw wordt gegenereerd
+        throw; // Gooi de gevangen uitzondering opnieuw om verder te verspreiden
+    }
+
+    // Naverzekeringsvoorwaarden
+    ENSURE(job->isFinished(), "Taak is niet voltooid");
+    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initiëleBelasting, "Apparaat heeft de taak niet verwerkt");
 }
-
-
 
 
 

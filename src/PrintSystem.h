@@ -9,8 +9,7 @@
 using namespace std;
 
 
-static const string reportExtension = ".txt";
-static const string storageDirectory = "reports/";
+
 
 class Device;
 class Job;
@@ -19,8 +18,7 @@ class PrintSystem{
 private:
     std::vector<Device *> devices;
     std::vector<Job *> jobs;
-    std::string log_file_name;
-    bool log = false;
+
 
 public:
     PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs);
