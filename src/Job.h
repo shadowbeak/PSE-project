@@ -37,7 +37,6 @@ public:
     string EndMessage() const;
 
     Device *getBeingWorkedOnBy() const;
-
     void setBeingWorkedOnBy(Device *beingWorkedOnBy);
 
 

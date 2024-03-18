@@ -3,7 +3,7 @@
 #include "PrintSystemUtils.h"
 #include "DesignByContract.h"
 #include <iostream>
-#include <sstream>
+
 
 
 int Job::getJobNumber() const {
@@ -55,7 +55,7 @@ Device *Job::getBeingWorkedOnBy() const {
 void Job::setBeingWorkedOnBy(Device *beingWorkedOnBy) {
     Job::beingWorkedOnBy = beingWorkedOnBy;
 }
-std::string finishMessage() const;
+std::string finishMessage();
 
 Job::Job(int jobNumber, int pageCount, const std::string &userName) : jobNumber(jobNumber), pageCount(pageCount),
 
@@ -106,19 +106,14 @@ Job::Job(TiXmlElement *job_element) {
     userName = UN_temp;
 }
 
-std::string Job::EndMessage() const
-{
+string Job::EndMessage() const {
+    REQUIRE(beingWorkedOnBy != NULL, "Job is not assigned to a device");
 
-    REQUIRE(assignedTo != NULL, "Job is not assigned to a device");
-
-    stringstream message;
-
-    message << "Printer " << '"' << assignedTo->getName() << '"' << " finished job:" << endl;
-    message << "\tNumber: " << jobNumber << endl;
-    message << "\tSubmitted by " << '"' << userName << '"' << endl;
-    message << "\t" << pageCount << " pages" << endl;
-
-    return message.str();
+    return R"(Printer ")" + beingWorkedOnBy->getName() + R"(" finished job:
+    Number: )" + std::to_string(jobNumber) + R"(
+    Submitted by ")" + userName + R"("
+    )" + std::to_string(pageCount) + " pages\n";
+}
 
 
 

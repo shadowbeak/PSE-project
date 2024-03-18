@@ -33,6 +33,11 @@ public:
     void assignEverything() const;
 
 
+    Job *getFirstJob() const;
+    Job *getFirstUnprocessedJob() const;
+    
+
+
 
     //void clear();
     //void ReadJob(TiXmlElement *job_element);

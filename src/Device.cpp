@@ -131,18 +131,6 @@ int Device::getJobBurden() const{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 string Device::processJob() {
     // Check if the job and device are valid
     REQUIRE(jobs.front() != NULL, "Invalid job");
