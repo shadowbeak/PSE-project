@@ -19,11 +19,14 @@ class PrintSystem{
 private:
     std::vector<Device *> devices;
     std::vector<Job *> jobs;
+    std::string log_file_name;
+    bool log = false;
 
 public:
     PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs);
     PrintSystem();
     virtual ~PrintSystem();
+
 
     void ReadJob(TiXmlElement *jobElement);
     void ReadDevice(TiXmlElement *deviceElement);
@@ -41,6 +44,12 @@ public:
     bool checkJobs()const;
     bool checkDevices()const;
     bool checkSystem()const;
+
+
+
+
+
+
 
 
 

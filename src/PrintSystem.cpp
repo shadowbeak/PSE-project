@@ -25,7 +25,7 @@ PrintSystem::~PrintSystem() {
 
 
 std::string PrintSystem::printReport() const {
-    REQUIRE(checkSystem(),"Het PrintSystem bevat oneffenheden.");
+
 
 string filename = constructFilename(storageDirectory,reportExtension);
     std::ofstream report;
@@ -50,11 +50,11 @@ void PrintSystem::Readfile(const string &filename) {        // Reading data from
     }
 
     TiXmlElement* root = doc.FirstChildElement();
-    if (root == nullptr) {
+    if (root == NULL) {
         cerr << "Failed to read the file: No SYSTEM root." << endl;
         return;
     }
-    for (TiXmlElement *elem = root->FirstChildElement(); elem != nullptr; elem = elem->NextSiblingElement())
+    for (TiXmlElement *elem = root->FirstChildElement(); elem != NULL; elem = elem->NextSiblingElement())
     {
         if (string(elem->Value()) == "DEVICE") {
             ReadDevice(elem);
@@ -69,6 +69,9 @@ void PrintSystem::Readfile(const string &filename) {        // Reading data from
     checkSystem();
     doc.Clear();
 }
+
+
+
 
 
 void PrintSystem::ReadDevice(TiXmlElement *deviceElement) {
@@ -175,6 +178,34 @@ bool PrintSystem::checkSystem()const{
 
 
 
+
+void PrintSystem::processFirstJob() const {
+
+    REQUIRE(!jobs.empty(), "No jobs were found");
+    REQUIRE(!devices.empty(), "No devices were found");
+    REQUIRE(getFirstUnprocessedJob() != NULL, "All jobs are processed");
+    REQUIRE(getFirstUnprocessedJob()->getBeingWorkedOnBy() != NULL, "Job is not assigned to a device");
+
+    Job *job = getFirstUnprocessedJob();
+    Device *device = job->getBeingWorkedOnBy();
+    int initialLoad = device->getJobBurden();
+    job->setInProcess(true);
+    std::string message = device->processJob();
+
+    if (!log_file_name.empty() && log)
+    {
+        std::ofstream log_file(log_file_name, std::ios_base::app);
+        log_file << message << std::endl;
+        log_file.close();
+    }
+    else if (log)
+    {
+        std::cout << message << std::endl;
+    }
+
+    ENSURE(job->isFinished(), "Job is not finished");
+    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initialLoad, "Device did not process the job");
+}
 
 
 
