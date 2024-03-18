@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "tinyxml.h"
+using namespace std;
 
 class Device;
 
@@ -11,14 +12,14 @@ class Job {
 private:
     int jobNumber;
     int pageCount;
-    std::string userName;
+    string userName;
     bool finished = false;
     bool inProcess = false;
     Device* beingWorkedOnBy = NULL;
 
 public:
     //constructors en destructor
-    Job(int jobNumber, int pageCount, const std::string &userName);
+    Job(int jobNumber, int pageCount, const string &userName);
     explicit Job(TiXmlElement *jobElement);
     virtual ~Job();
 
@@ -31,8 +32,9 @@ public:
     void setFinished(bool finished);
     bool isInProcess() const;
     void setInProcess(bool inProcess);
-    const std::string &getUserName() const;
+    const string &getUserName() const;
     void setUserName(const std::string &userName);
+    string EndMessage() const;
 
     Device *getBeingWorkedOnBy() const;
 

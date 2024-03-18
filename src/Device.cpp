@@ -2,17 +2,20 @@
 #include "PrintSystemUtils.h"
 #include "DesignByContract.h"
 #include <sstream>
+#include <thread>
+
+#include <random>
 
 
 
 
 
-Device::Device(const std::string &name, int emission, int speed, const std::deque<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
+Device::Device(const string &name, int emission, int speed, const std::deque<Job *> &jobs) : name(name),emission(emission),speed(speed),jobs(jobs) {}
 
 Device::Device(TiXmlElement *device_node) {
-    std::string NA_temp;
-    std::string EM_temp;
-    std::string SP_temp;
+    string NA_temp;
+    string EM_temp;
+    string SP_temp;
 
     TiXmlNode *node = device_node->FirstChild();
     while (node != nullptr) {
@@ -22,8 +25,8 @@ Device::Device(TiXmlElement *device_node) {
             continue;
         }
 
-        std::string nodeName = node->Value();
-        std::string nodeValue = node->FirstChild()->Value();
+        string nodeName = node->Value();
+        string nodeValue = node->FirstChild()->Value();
 
         if (nodeName == "name") {
             NA_temp = nodeValue;
@@ -43,7 +46,7 @@ Device::Device(TiXmlElement *device_node) {
 
     EXPECT(!EM_temp.empty(), "Geen emission opgegeven.");
     EXPECT(isInt(EM_temp) , "Emission moet een integer zijn.");
-    emission = std::stoi(EM_temp);
+    emission = stoi(EM_temp);
 
     EXPECT(!SP_temp.empty(), "Geen speed opgegeven.");
     EXPECT(isInt(SP_temp) , "Speed moet een integer zijn.");
@@ -52,7 +55,7 @@ Device::Device(TiXmlElement *device_node) {
 Device::~Device() {}
 
 //getters and setters
-const std::string &Device::getName() const {
+const string &Device::getName() const {
     return name;
 }
 
@@ -78,7 +81,7 @@ void Device::setSpeed(int speed) {
     Device::speed = speed;
 }
 
-const std::deque<Job *>  &Device::getJobs() const {
+ const std::deque<Job *>  &Device::getJobs()  const {
     return jobs;
 }
 
@@ -93,8 +96,8 @@ void Device::addJob(Job *job) {
     ENSURE(jobs.back() == job, "Job is niet toegevoegd aan de device.");
 }
 
-std::string Device::printReport() const {
-    std::stringstream report;
+string Device::printReport() const {
+    stringstream report;
 
     report << name << " (CO2: " << emission << "g/page):" << std::endl;
 
@@ -140,31 +143,34 @@ int Device::getJobBurden() const{
 
 
 
-void Device::processJob(Job* job) const {
+string Device::processJob() {
     // Check if the job and device are valid
-    REQUIRE(job != NULL, "Invalid job");
+    REQUIRE(jobs.front() != NULL, "Invalid job");
 
-    // Get job details
-    int jobNumber = job->getJobNumber();
-    int pageCount = job->getPageCount();
-    std::string userName = job->getUserName();
+    // De te verwerken taak ophalen
+    Job* job = jobs.front();
 
-    // Print each page
-    for (int i = 1; i <= pageCount; ++i) {
-        std::cout << "Printing page " << i << " of job number " << jobNumber << " submitted by \"" << userName << "\"" << std::endl;
-    }
+    // Simuleer verwerkingstijd op basis van factoren
+    int verwerkingsTijdMs = 0;
 
-    // Print job completion message
-    std::cout << "Printer \"" << this->getName() << "\" finished job:" << std::endl;
-    std::cout << "Number: " << jobNumber << std::endl;
-    std::cout << "Submitted by \"" << userName << "\"" << std::endl;
-    std::cout << pageCount << " pages" << std::endl;
+    // verwerkingstijd in seconden
+    int speedInSecondsPerPage = speed * 60;
 
-    // Set the job as finished
+    // Bereken de verwerkingstijd in milliseconden
+    verwerkingsTijdMs += (job->getPageCount() / speedInSecondsPerPage) * 1000;
+
+    // Simuleer verwerking met wachttijd
+    std::this_thread::sleep_for(std::chrono::milliseconds(verwerkingsTijdMs));
+
+    // Werkstatus bijwerken
+    job->setInProcess(false);
     job->setFinished(true);
+    jobs.pop_front() ;
 
     // Ensure postcondition
-    ENSURE(job->isFinished(), "Job is not finished");
+    ENSURE(job->isFinished(), "Job is not finished yet");
+
+    return job->EndMessage();
 }
 
 
