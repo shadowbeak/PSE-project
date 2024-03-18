@@ -38,9 +38,6 @@ public:
     void assignEverything() const;
     void processFirstJob() const;
 
-    Job *getFirstJob() const;
-    Job *getFirstUnprocessedJob() const;
-
     bool checkJobs()const;
     bool checkDevices()const;
     bool checkSystem()const;
