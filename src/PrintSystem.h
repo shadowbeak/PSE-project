@@ -37,6 +37,8 @@ public:
     Device* deviceAssignment(Job *job) const;
     void assignEverything() const;
     void processFirstJob() const;
+    Job *getFirstUnprocessedJob() const;
+
 
     bool checkJobs()const;
     bool checkDevices()const;

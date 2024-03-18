@@ -180,6 +180,36 @@ bool PrintSystem::checkSystem()const{
 
 
 
+void PrintSystem::processFirstJob() const {
+    REQUIRE(!jobs.empty(), "No jobs were found");
+    REQUIRE(!devices.empty(), "No devices were found");
+    REQUIRE(getFirstUnprocessedJob() != NULL, "All jobs are processed");
+    REQUIRE(getFirstUnprocessedJob()->getBeingWorkedOnBy() != NULL, "Job is not assigned to a device");
+
+    Job *job = getFirstUnprocessedJob();
+    Device *device = job->getBeingWorkedOnBy();
+    int initialLoad = device->getJobBurden();
+    job->setInProcess(true);
+    std::string message = device->processJob();
+
+    // Write the message to a file
+    std::ofstream outputFile("output.txt", std::ios_base::app); // Open the file in append mode
+    if (outputFile.is_open()) {
+        outputFile << message << std::endl;
+        outputFile.close();
+        std::cout << "Message written to file successfully." << std::endl;
+    } else {
+        std::cerr << "Error: Unable to open the file." << std::endl;
+    }
+
+    ENSURE(job->isFinished(), "Job is not finished");
+    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initialLoad, "Device did not process the job");
+}
+
+
+
+
+
 
 PrintSystem::PrintSystem() {}
 
