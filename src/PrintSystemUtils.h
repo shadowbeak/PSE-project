@@ -56,4 +56,12 @@ bool is_number(const std::string& s);
  * @param extension De bestandsextensie
  * @return De gegenereerde bestandsnaam
  */
-std::string GenerateFileName(const std::string &prefix, const std::string &extension);
+std::string constructFilename(const std::string& storageDirectory, const std::string& reportExtension, const std::string& name);
+
+bool isInt(const std::string& str);
+
+bool isNotInDevice(Job *job, std::deque<Job*>& jobs);
+
+bool isNegative(int value);
+
+#endif //PSE_PROJECT_PRINTSYSTEMUTILS_H

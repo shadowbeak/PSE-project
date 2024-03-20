@@ -105,7 +105,7 @@ public:
     //atrribute:
     //static bool CheckNotNegative(int num);
     //PrintSystem* _init;
-};
+
 
 
 

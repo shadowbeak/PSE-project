@@ -26,7 +26,7 @@ PrintSystem::~PrintSystem() {
 // Functie om rapport af te drukken
 // Genereert een rapportbestand met apparaatinformatie
 std::string PrintSystem::printReport() const {
-    string filename = constructFilename(storageDirectory, reportExtension);
+    string filename = constructFilename("reports/",".txt", "report_");
     ofstream report;
     report.open(filename);
     for (size_t i = 0; i < devices.size(); ++i) {
@@ -129,30 +129,49 @@ void PrintSystem::assignEverything() const {
 
 // Functie om de eerste niet-verwerkte taak te verwerken
 void PrintSystem::processFirstJob() const {
+    // Voorwaarden
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
     REQUIRE(!devices.empty(), "Geen apparaten gevonden");
     REQUIRE(getFirstUnprocessedJob() != NULL, "Alle taken zijn verwerkt");
     REQUIRE(getFirstUnprocessedJob()->getBeingWorkedOnBy() != NULL, "Taak is niet toegewezen aan een apparaat");
 
+    // Haal de eerste onverwerkte taak en het toegewezen apparaat op
     Job *job = getFirstUnprocessedJob();
     Device *device = job->getBeingWorkedOnBy();
-    int initialLoad = device->getJobBurden();
+
+    // Bewaar de initiële belasting van het apparaat
+    int initiëleBelasting = device->getJobBurden();
+
+    // Stel de taak in als zijnde verwerkt
     job->setInProcess(true);
-    std::string message = device->processJob();
+
+    // Verwerk de taak op het toegewezen apparaat en genereer een bericht
+    std::string bericht = device->processJob();
+
+    // Construeer de bestandsnaam voor het schrijven van het bericht naar een bestand
+    std::string bestandsnaam = constructFilename("procescases/", ".txt", "proces_");
 
     // Schrijf het bericht naar een bestand
-    std::ofstream outputFile("output.txt", std::ios_base::app); // Open het bestand in toevoegmodus
-    if (outputFile.is_open()) {
-        outputFile << message << std::endl;
-        outputFile.close();
-        std::cout << "Bericht succesvol naar bestand geschreven." << std::endl;
-    } else {
-        std::cerr << "Fout: Kan het bestand niet openen." << std::endl;
+    std::ofstream outputFile(bestandsnaam, std::ios_base::app);
+    if (!outputFile.is_open()) {
+        throw std::runtime_error("Kan het bestand niet openen.");
     }
 
+    try {
+        outputFile << bericht << std::endl;
+        outputFile.close();
+        std::cout << "Bericht succesvol naar bestand geschreven." << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Fout tijdens het schrijven naar het bestand: " << e.what() << std::endl;
+        outputFile.close(); // Sluit het bestand voordat de uitzondering opnieuw wordt gegenereerd
+        throw; // Gooi de gevangen uitzondering opnieuw om verder te verspreiden
+    }
+
+    // Naverzekeringsvoorwaarden
     ENSURE(job->isFinished(), "Taak is niet voltooid");
-    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initialLoad, "Apparaat heeft de taak niet verwerkt");
+    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initiëleBelasting, "Apparaat heeft de taak niet verwerkt");
 }
+
 
 // Functie om te controleren of alle attributen van taken en apparaten niet-negatief zijn
 bool PrintSystem::checkJobs() const {
