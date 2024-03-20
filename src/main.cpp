@@ -8,7 +8,6 @@ int main() {
     PrintSystem system;
     system.Readfile("xmlTests/EmissionIsNeg.xml");
     //system.assignALL();
-    //system.processFirstJob();
     //std::cout << system.printReport() << std::endl;
 
     return 0;
