@@ -1,0 +1,17 @@
+<SYSTEM>
+    <DEVICE>
+        <name>Office_Printer99</name>
+        <emission>3</emission>
+        <speed>90</speed>
+    </DEVICE>
+    <JOB>
+        <jobNumber>99854</jobNumber>
+        <pageCount>10</pageCount>
+        <userName></userName>
+    </JOB>
+    <JOB>
+        <jobNumber>12354</jobNumber>
+        <pageCount>2</pageCount>
+        <userName>Adam</userName>
+    </JOB>
+</SYSTEM>

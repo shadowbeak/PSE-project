@@ -6,7 +6,7 @@
 
 int main() {
     PrintSystem system;
-    system.Readfile("xmlTests/NoPageCount.xml");
+    system.Readfile("xmlTests/NoJobNumber.xml");
     system.assignALL();
     system.processFirstJob();
     std::cout << system.printReport() << std::endl;
