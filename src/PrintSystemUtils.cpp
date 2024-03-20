@@ -97,9 +97,7 @@ bool isInt(const std::string& str) {
 }
 
 bool isNegativeInt(const std::string& str) {
-    if (str.empty()) {
-        return false;
-    }
+
 
     // Controleer of het eerste teken een min-teken is en de rest cijfers zijn
     if (str[0] == '-') {

@@ -4,6 +4,11 @@
         <emission>3</emission>
         <speed></speed>
     </DEVICE>
+    <DEVICE>
+        <name>supatron13</name>
+        <emission>3</emission>
+        <speed>2</speed>
+    </DEVICE>
     <JOB>
         <jobNumber>99854</jobNumber>
         <pageCount>10</pageCount>

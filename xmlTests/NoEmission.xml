@@ -4,6 +4,11 @@
         <emission></emission>
         <speed>90</speed>
     </DEVICE>
+    <DEVICE>
+        <name>Printsdvsdvsv</name>
+        <emission>12</emission>
+        <speed>90</speed>
+    </DEVICE>
     <JOB>
         <jobNumber>99854</jobNumber>
         <pageCount>10</pageCount>

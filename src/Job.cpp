@@ -81,19 +81,22 @@ Job::Job(TiXmlElement *job_element) {
     }
 
     EXPECT(!JN_temp.empty(), "Geen jobNumber opgegeven.");
-    EXPECT(isInt(JN_temp), "JobNumber moet een integer zijn");
+    EXPECT(isInt(JN_temp), "JobNumber moet een integer zijn.");
+    EXPECT(!isNegativeInt(JN_temp), "JobNumber mag niet negatief zijn.");
     jobNumber = std::stoi(JN_temp);
+
 
     EXPECT(!PC_temp.empty(), "Geen pageCount opgegeven.");
     EXPECT(isInt(PC_temp), "PageCount moet een integer zijn");
+    EXPECT(!isNegativeInt(PC_temp), "PageCount mag niet negatief zijn.");
     pageCount = std::stoi(PC_temp);
+
 
     EXPECT(!UN_temp.empty(), "Geen userName opgegeven.");
     userName = UN_temp;
 }
 
-std::string Job::EndMessage() const
-{
+std::string Job::EndMessage() const{
 
     REQUIRE(getBeingWorkedOnBy() != NULL, "Job is not assigned to a device");
 

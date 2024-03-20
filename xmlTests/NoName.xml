@@ -4,6 +4,11 @@
         <emission>3</emission>
         <speed>80</speed>
     </DEVICE>
+    <DEVICE>
+        <name>azcaevezv</name>
+        <emission>3</emission>
+        <speed>80</speed>
+    </DEVICE>
     <JOB>
         <jobNumber>4525</jobNumber>
         <pageCount>10</pageCount>
