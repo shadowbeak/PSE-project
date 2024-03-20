@@ -13,7 +13,7 @@ static const std::string reportFileName = "report_";
 
 
 static const std::string processExtension = ".txt";
-static const std::string processDirectory = "procescases/";
+static const std::string processDirectory = "procesCases/";
 static const std::string processFileName = "proces_";
 
 

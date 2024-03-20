@@ -27,7 +27,7 @@ PrintSystem::~PrintSystem() {
 // Functie om rapport af te drukken
 // Genereert een rapportbestand met apparaatinformatie
 std::string PrintSystem::printReport() const {
-    string filename = constructFilename("reports/",".txt", "report_");
+    string filename = constructFilename(reportDirectory,reportExtension, reportFileName);
     ofstream report;
     report.open(filename);
     for (size_t i = 0; i < devices.size(); ++i) {
@@ -167,7 +167,7 @@ void PrintSystem::processFirstJob() const {
     std::string bericht = device->processJob();
 
     // Construeer de bestandsnaam voor het schrijven van het bericht naar een bestand
-    std::string bestandsnaam = constructFilename("procescases/", ".txt", "proces_");
+    std::string bestandsnaam = constructFilename(processDirectory, processExtension, processFileName);
 
     // Schrijf het bericht naar een bestand
     std::ofstream outputFile(bestandsnaam, std::ios_base::app);
