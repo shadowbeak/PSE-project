@@ -232,3 +232,11 @@ Job *PrintSystem::getNextpendingJob() const {
     }
     return NULL;
 }
+
+const vector<Device *> &PrintSystem::getDevices() const {
+    return devices;
+}
+
+const vector<Job *> &PrintSystem::getJobs() const {
+    return jobs;
+}

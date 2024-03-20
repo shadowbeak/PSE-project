@@ -68,6 +68,9 @@ public:
     bool checkSystem()const; 
     /**< Controleert het gehele systeem */
 
+    const vector<Device *> &getDevices() const;
+
+    const vector<Job *> &getJobs() const;
 
 };
 
