@@ -6,10 +6,10 @@
 
 int main() {
     PrintSystem system;
-    system.Readfile("xmlTests/JobNumberIsNeg.xml");
-    system.assignALL();
-    system.processFirstJob();
-    std::cout << system.printReport() << std::endl;
+    system.Readfile("xmlTests/EmissionIsNeg.xml");
+    //system.assignALL();
+    //system.processFirstJob();
+    //std::cout << system.printReport() << std::endl;
 
     return 0;
 }

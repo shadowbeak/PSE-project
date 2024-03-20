@@ -84,6 +84,8 @@ void Device::addJob(Job *job) {
 }
 
 string Device::printReport() const {
+    REQUIRE(emission >= 0, "Emission is negative.");
+    REQUIRE(speed >= 0, "Speed is negative.");
     stringstream report;
 
     report << name << " (CO2: " << emission << "g/page):" << std::endl;
