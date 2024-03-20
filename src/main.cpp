@@ -6,7 +6,7 @@
 
 int main() {
     PrintSystem system;
-    system.Readfile("xmlTests/EmissionIsNeg.xml");
+    system.Readfile("xmlTests/JobNumberIsNeg.xml");
     system.assignALL();
     std::cout << system.printReport() << std::endl;
 

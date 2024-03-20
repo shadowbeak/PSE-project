@@ -85,8 +85,10 @@ void Device::addJob(Job *job) {
 
 string Device::printReport() const {
     try{
-        REQUIRE(emission >= 0, "Emission is negatief.");
-        REQUIRE(speed >= 0, "Speed is negatief.");
+        EXPECT(emission >= 0, "Emission is negatief.");
+        EXPECT(speed >= 0, "Speed is negatief.");
+    }catch(const std::runtime_error& error){
+        std::cerr << error.what();
     }
 
     stringstream report;
