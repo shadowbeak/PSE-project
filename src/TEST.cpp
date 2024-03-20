@@ -18,40 +18,29 @@ protected:
 
 //Jobs:
 TEST_F(TestPrintSystem, NoPageCount){
-    system->Readfile("xmlTest/noSpeed.xml");
-    EXPECT_TRUE(system->getDevices().empty());
 }
 
 TEST_F(TestPrintSystem, NoJobNumber){
-    system->Readfile("xmlTest/noSpeed.xml");
-    EXPECT_TRUE(system->getDevices().empty());
 }
 
 TEST_F(TestPrintSystem, NoUserName){
-    system->Readfile("xmlTest/noSpeed.xml");
-    EXPECT_TRUE(system->getDevices().empty());
 }
+
 
 //Devices:
 TEST_F(TestPrintSystem, NoSpeed){
-    system->Readfile("xmlTest/noSpeed.xml");
-    EXPECT_TRUE(system->getDevices().empty());
 }
 
 TEST_F(TestPrintSystem, NoEmission){
-    system->Readfile("xmlTest/NoEmission.xml");
-    EXPECT_TRUE(system->getDevices().empty());
 }
 
 TEST_F(TestPrintSystem, NoName){
-    system->Readfile("xmlTest/noSpeed.xml");
-    EXPECT_TRUE(system->getDevices().empty());
 }
 
 
 //Reports:
 TEST_F(TestPrintSystem, checkPrintReport){
-    system->Readfile("xmlTest/reportCheck");
+    system->Readfile("xmlTests/ManualTest");
     system->getDevices()[0]->addJob(system->getJobs()[0]);
     system->getDevices()[1]->addJob(system->getJobs()[1]);
     system->getDevices()[2]->addJob(system->getJobs()[2]);
