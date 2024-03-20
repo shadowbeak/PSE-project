@@ -150,17 +150,17 @@ void PrintSystem::processFirstJob() const {
     // Voorwaarden
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
     REQUIRE(!devices.empty(), "Geen apparaten gevonden");
-    REQUIRE(getNextpendingJob() != NULL, "Alle taken zijn verwerkt");
-    REQUIRE(getNextpendingJob()->getBeingWorkedOnBy() != NULL, "Taak is niet toegewezen aan een apparaat");
+    REQUIRE(getNextPendingJob() != NULL, "Alle taken zijn verwerkt");
+    REQUIRE(getNextPendingJob()->getBeingWorkedOnBy() != NULL, "Taak is niet toegewezen aan een apparaat");
 
     // Haal de eerste onverwerkte taak en het toegewezen apparaat op
-    Job *job = getNextpendingJob();
+    Job *job = getNextPendingJob();
     Device *device = job->getBeingWorkedOnBy();
 
     // Bewaar de initiële belasting van het apparaat
-    int initiëleBelasting = device->getJobBurden();
+    int initialBurden = device->getJobBurden();
 
-    // Stel de taak in als zijnde verwerkt
+    // Stel de taak in als zijn de verwerkt
     job->setInProcess(true);
 
     // Verwerk de taak op het toegewezen apparaat en genereer een bericht
@@ -187,7 +187,7 @@ void PrintSystem::processFirstJob() const {
 
     // Naverzekeringsvoorwaarden
     ENSURE(job->isFinished(), "Taak is niet voltooid");
-    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initiëleBelasting, "Apparaat heeft de taak niet verwerkt");
+    ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initialBurden, "Apparaat heeft de taak niet verwerkt");
 }
 
 
@@ -223,7 +223,7 @@ bool PrintSystem::checkSystem() const {
 }
 
 // Functie om de eerste niet-verwerkte taak op te halen
-Job *PrintSystem::getNextpendingJob() const {
+Job *PrintSystem::getNextPendingJob() const {
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
     for (Job *job : jobs) {
         if (!job->isFinished() && !job->isInProcess()) {

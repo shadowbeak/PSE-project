@@ -7,6 +7,16 @@
 #include "tinyxml.h"
 using namespace std;
 
+static const std::string reportExtension = ".txt";
+static const std::string reportDirectory = "reports/";
+static const std::string reportFileName = "report_";
+
+
+static const std::string processExtension = ".txt";
+static const std::string processDirectory = "procescases/";
+static const std::string processFileName = "proces_";
+
+
 class Device;
 class Job;
 
@@ -55,7 +65,7 @@ public:
     void processFirstJob() const; 
     /**< Verwerk de eerste taak */
 
-    Job *getNextpendingJob() const;
+    Job *getNextPendingJob() const;
     /**< Geeft de eerste onverwerkte taak terug */
 
     // Methoden voor het controleren van de consistentie van het systeem
