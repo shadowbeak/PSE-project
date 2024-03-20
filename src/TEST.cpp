@@ -1,44 +1,73 @@
-/*#include "../gtest/include/gtest/gtest.h"
-
+#include <gtest/gtest.h>
 #include "PrintSystem.h"
-#include "Device.h"
-#include "Job.h"
 #include "PrintSystemUtils.h"
 
-using namespace std;
-
-class PrintSystemTest: public ::testing::Test {
+class TestPrintSystem : public ::testing::Test {
 protected:
-    friend class PrintSystem;
-    PrintSystem reader;
+    PrintSystem *system{};
 
-    //friend class System;
-    //System system;
-    friend class Device;
-    Device device;
-    friend class Job;
-    Job job;
-
-
-    // virtual void SetUp() will be called before each test is run.  You
-    // should define it if you need to initialize the variables.
-    // Otherwise, this can be skipped.
-    virtual void SetUp() {
+    void SetUp() override {
+        system = new PrintSystem();
     }
-
-    // virtual void TearDown() will be called after each test is run.
-    // You should define it if there is cleanup work to do.  Otherwise,
-    // you don't have to provide it.
-    virtual void TearDown() {
+    void TearDown() override {
+        delete system;
     }
-
 };
 
 
 
+//Jobs:
+TEST_F(TestPrintSystem, NoPageCount){
+    system->Readfile("xmlTest/noSpeed.xml");
+    EXPECT_TRUE(system->getDevices().empty());
+}
 
-int main(int argc, char *argv[])
-{
+TEST_F(TestPrintSystem, NoJobNumber){
+    system->Readfile("xmlTest/noSpeed.xml");
+    EXPECT_TRUE(system->getDevices().empty());
+}
+
+TEST_F(TestPrintSystem, NoUserName){
+    system->Readfile("xmlTest/noSpeed.xml");
+    EXPECT_TRUE(system->getDevices().empty());
+}
+
+//Devices:
+TEST_F(TestPrintSystem, NoSpeed){
+    system->Readfile("xmlTest/noSpeed.xml");
+    EXPECT_TRUE(system->getDevices().empty());
+}
+
+TEST_F(TestPrintSystem, NoEmission){
+    system->Readfile("xmlTest/NoEmission.xml");
+    EXPECT_TRUE(system->getDevices().empty());
+}
+
+TEST_F(TestPrintSystem, NoName){
+    system->Readfile("xmlTest/noSpeed.xml");
+    EXPECT_TRUE(system->getDevices().empty());
+}
+
+
+//Reports:
+TEST_F(TestPrintSystem, checkPrintReport){
+    system->Readfile("xmlTest/reportCheck");
+    system->getDevices()[0]->addJob(system->getJobs()[0]);
+    system->getDevices()[1]->addJob(system->getJobs()[1]);
+    system->getDevices()[2]->addJob(system->getJobs()[2]);
+    std::string fileReport = system->printReport();
+    std::string fileToCompare = "reportTest/reportTest1";
+    EXPECT_TRUE(FileCompare(fileReport, fileToCompare));
+
+}
+
+
+
+
+int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
+    // to allow for threadsafe death tests
+    ::testing::FLAGS_gtest_death_test_style = "threadsafe";
     return RUN_ALL_TESTS();
-} */
+}
+
