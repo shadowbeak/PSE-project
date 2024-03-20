@@ -49,13 +49,13 @@ public:
     Device* deviceAssignment(Job *job) const; 
     /**< Wijs een taak toe aan een apparaat */
 
-    void assignEverything() const; 
+    void assignALL() const;
     /**< Wijs alle taken toe */
 
     void processFirstJob() const; 
     /**< Verwerk de eerste taak */
 
-    Job *getFirstUnprocessedJob() const; 
+    Job *getNextpendingJob() const;
     /**< Geeft de eerste onverwerkte taak terug */
 
     // Methoden voor het controleren van de consistentie van het systeem

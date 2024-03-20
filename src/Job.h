@@ -22,6 +22,7 @@ private:
     Device* beingWorkedOnBy = NULL; /**< Het apparaat waaraan de taak wordt toegewezen */
 
 public:
+
     //constructors en destructor
     Job(int jobNumber, int pageCount, const string &userName); /**< Constructor met parameters */
     explicit Job(TiXmlElement *jobElement); /**< Constructor op basis van XML-elementen */
@@ -37,7 +38,6 @@ public:
     bool isInProcess() const; /**< Controleert of de taak wordt verwerkt */
     void setInProcess(bool inProcess); /**< Stelt in of de taak wordt verwerkt */
     const string &getUserName() const; /**< Geeft de gebruikersnaam terug */
-    void setUserName(const std::string &userName); /**< Stelt de gebruikersnaam in */
     string EndMessage() const; /**< Geeft een bericht terug dat de voltooiing van de taak aangeeft */
 
     Device *getBeingWorkedOnBy() const; /**< Geeft het apparaat terug waaraan de taak wordt toegewezen */

@@ -7,9 +7,8 @@
 #include "Device.h"
 
 using namespace std;
-
-// Constructor
-PrintSystem::PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs) : devices(devices), jobs(jobs) {}
+// constructor
+PrintSystem::PrintSystem() {}
 
 // Destructor
 PrintSystem::~PrintSystem() {
@@ -116,7 +115,7 @@ Device* PrintSystem::deviceAssignment(Job *job) const {
 }
 
 // Functie om alle taken aan apparaten toe te wijzen
-void PrintSystem::assignEverything() const {
+void PrintSystem::assignALL() const {
     REQUIRE(!devices.empty(), "Geen apparaten gevonden");
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
 
@@ -132,11 +131,11 @@ void PrintSystem::processFirstJob() const {
     // Voorwaarden
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
     REQUIRE(!devices.empty(), "Geen apparaten gevonden");
-    REQUIRE(getFirstUnprocessedJob() != NULL, "Alle taken zijn verwerkt");
-    REQUIRE(getFirstUnprocessedJob()->getBeingWorkedOnBy() != NULL, "Taak is niet toegewezen aan een apparaat");
+    REQUIRE(getNextpendingJob() != NULL, "Alle taken zijn verwerkt");
+    REQUIRE(getNextpendingJob()->getBeingWorkedOnBy() != NULL, "Taak is niet toegewezen aan een apparaat");
 
     // Haal de eerste onverwerkte taak en het toegewezen apparaat op
-    Job *job = getFirstUnprocessedJob();
+    Job *job = getNextpendingJob();
     Device *device = job->getBeingWorkedOnBy();
 
     // Bewaar de initiële belasting van het apparaat
@@ -205,7 +204,7 @@ bool PrintSystem::checkSystem() const {
 }
 
 // Functie om de eerste niet-verwerkte taak op te halen
-Job *PrintSystem::getFirstUnprocessedJob() const {
+Job *PrintSystem::getNextpendingJob() const {
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
     for (Job *job : jobs) {
         if (!job->isFinished() && !job->isInProcess()) {
@@ -214,4 +213,3 @@ Job *PrintSystem::getFirstUnprocessedJob() const {
     }
     return NULL;
 }
-PrintSystem::PrintSystem() {}
