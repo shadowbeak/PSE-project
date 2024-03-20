@@ -1,3 +1,0 @@
-Office_Printer99 (CO2: 3g/page):
-	* Current:
-		[#0|Adam]
