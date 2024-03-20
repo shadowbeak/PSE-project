@@ -214,3 +214,4 @@ Job *PrintSystem::getFirstUnprocessedJob() const {
     }
     return NULL;
 }
+PrintSystem::PrintSystem() {}

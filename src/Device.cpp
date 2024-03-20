@@ -61,36 +61,20 @@ const string &Device::getName() const {
     return name;
 }
 
-void Device::setName(const std::string &name) {
-    Device::name = name;
-}
+
 
 int Device::getEmission() const {
     return emission;
 }
 
-void Device::setEmission(int emission) {
-    REQUIRE(!isNegative(emission), "Emission mag niet negatief zijn.");
-    Device::emission = emission;
-}
+
 
 int Device::getSpeed() const {
     return speed;
 }
 
-void Device::setSpeed(int speed) {
-    REQUIRE(!isNegative(speed), "Speed mag niet negatief zijn.");
-    Device::speed = speed;
-}
 
- const std::deque<Job *>  &Device::getJobs()  const {
-    return jobs;
-}
 
-void Device::setJobs(const std::deque<Job *>  &jobs) {
-    Device::jobs = jobs;
-
-}
 
 void Device::addJob(Job *job) {
     REQUIRE(isNotInDevice(job, jobs), "job heeft jobnummer die al aanwezig is in onze device");

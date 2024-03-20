@@ -7,10 +7,6 @@
 #include "tinyxml.h"
 using namespace std;
 
-
-static const string reportExtension = ".txt";
-static const string storageDirectory = "reports/";
-
 class Device;
 class Job;
 
@@ -23,13 +19,9 @@ class PrintSystem{
 private:
     std::vector<Device *> devices; /**< Een vector met afdrukapparaten */
     std::vector<Job *> jobs; /**< Een vector met printtaken */
-    std::string log_file_name; /**< De naam van het logbestand */
-    bool log = false; /**< Geeft aan of loggen is ingeschakeld */
 
 public:
     // Constructors en destructor
-    PrintSystem(const vector<Device *> &devices, const vector<Job *> &jobs); 
-    /**< Constructor met parameters */
 
     PrintSystem(); 
     /**< Standaardconstructor */
@@ -78,33 +70,6 @@ public:
 };
 
 
-
-
-
-
-
-
-
-
-    //void clear();
-    //void ReadJob(TiXmlElement *job_element);
-    //bool Initialization() const { return _init == this; }
-    //Device *getFirstDevice() const;
-    //Job *getFirstJob() const;
-    //Job *getFirstUnfinishedJob() const;
-    //Job *getFirstUnprocessedJob() const;
-    //const vector<Device *> &getDevices() const;
-    //const vector<Job *> &getJobs() const;
-    //vector<Job *> getUnfinishedJobs() const;
-    //bool isLogErrors() const;
-    //void setLogErrors(bool logErrors);
-    //bool VerifyConsistency() const;
-    //Device *getDeviceWithLeastLoad() const;
-    //void processFirstJob() const;
-
-    //atrribute:
-    //static bool CheckNotNegative(int num);
-    //PrintSystem* _init;
 
 
 

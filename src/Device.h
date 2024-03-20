@@ -33,12 +33,6 @@ public:
 	 */
     const string &getName() const;
 
-    
-	/**
-	 * Haalt de naam van het apparaat op.
-	 * @return
-	 */
-    void setName(const string &name);
 
      /**
 	 * Geeft de emissie van het apparaat
@@ -47,34 +41,11 @@ public:
     int getEmission() const;
 
     /**
-     * \brief Stelt de emissie van het apparaat in
-     * Stelt de emissie van het apparaat in op de opgegeven waarde.
-     */
-    void setEmission(int emission);
-
-    /**
 	 * Geeft de snelheid van het apparaat.
 	 * @return
 	 */
     int getSpeed() const;
 
-    /**
-     * \brief Stelt de snelheid van het apparaat in
-     * Stelt de snelheid van het apparaat in op de opgegeven waarde.
-     */
-    void setSpeed(int speed);
-
-    /**
-     * \brief Geeft de taken van het apparaat terug
-     * Geeft de taken van het apparaat terug als een const referentie naar een deque van Job-pointers.
-     */
-    const deque<Job *>  &getJobs() const ;
-
-    /**
-     * \brief Stelt de taken van het apparaat in
-     * Stelt de taken van het apparaat in op de opgegeven waarde.
-     */
-    void setJobs(const deque<Job *>  &jobs);
 
     	/**
 	 * Voegt een taak toe aan het apparaat

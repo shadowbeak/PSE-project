@@ -12,19 +12,11 @@ int Job::getJobNumber() const {
     return jobNumber;
 }
 
-void Job::setJobNumber(int jobNumber) {
-    REQUIRE(!isNegative(jobNumber), "JobNumber mag niet negatief.");
-    Job::jobNumber = jobNumber;
-}
 
 int Job::getPageCount() const {
     return pageCount;
 }
 
-void Job::setPageCount(int pageCount) {
-    REQUIRE(!isNegative(pageCount), "PageCount mag niet negatief.");
-    Job::pageCount = pageCount;
-}
 
 bool Job::isFinished() const {
     return finished;
@@ -46,9 +38,6 @@ const std::string &Job::getUserName() const {
     return userName;
 }
 
-void Job::setUserName(const std::string &userName) {
-    Job::userName = userName;
-}
 
 Device *Job::getBeingWorkedOnBy() const {
     return beingWorkedOnBy;
@@ -59,12 +48,7 @@ void Job::setBeingWorkedOnBy(Device *beingWorkedOnBy) {
 }
 std::string finishMessage();
 
-Job::Job(int jobNumber, int pageCount, const std::string &userName) : jobNumber(jobNumber), pageCount(pageCount),
-
-
-
-
-                                                                      userName(userName) {}
+Job::Job(int jobNumber, int pageCount, const std::string &userName) : jobNumber(jobNumber), pageCount(pageCount), userName(userName) {}
 
 
 Job::Job(TiXmlElement *job_element) {
@@ -122,11 +106,6 @@ std::string Job::EndMessage() const
     cout << endmessage.str() << endl;
     return endmessage.str();
 }
-
-
-
-
-
 
 
 
