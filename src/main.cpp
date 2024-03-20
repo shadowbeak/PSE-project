@@ -7,7 +7,7 @@
 int main() {
     PrintSystem system;
     system.Readfile("xmlTest/vbPDF.xml");
-    system.assignEverything();
+    system.assignALL();
     system.processFirstJob();
     std::cout << system.printReport() << std::endl;
 

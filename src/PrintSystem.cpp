@@ -5,6 +5,8 @@
 #include "PrintSystemUtils.h"
 #include "DesignByContract.h"
 #include "Device.h"
+#include <filesystem> // Voor bestandsmanipulatie
+
 
 using namespace std;
 // constructor
@@ -37,6 +39,16 @@ std::string PrintSystem::printReport() const {
     return filename;
 }
 
+
+
+
+
+
+
+
+
+
+
 // Functie om gegevens uit het bestand te lezen
 void PrintSystem::Readfile(const string &filename) {
     REQUIRE(FileExists(filename), "Bestand bestaat niet.");
@@ -46,6 +58,9 @@ void PrintSystem::Readfile(const string &filename) {
         cerr << doc.ErrorDesc() << endl;
         return;
     }
+
+
+
 
     TiXmlElement* root = doc.FirstChildElement();
     if (root == NULL) {
@@ -61,10 +76,14 @@ void PrintSystem::Readfile(const string &filename) {
             std::cerr << "Onherkenbaar element" << std::endl;
             continue;
         }
+
     }
     checkSystem();
     doc.Clear();
 }
+
+
+
 
 // Functie om een apparaat uit XML te lezen
 void PrintSystem::ReadDevice(TiXmlElement *deviceElement) {
