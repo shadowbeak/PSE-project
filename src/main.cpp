@@ -6,7 +6,7 @@
 
 int main() {
     PrintSystem system;
-    system.Readfile("xmlTests/EmissionIsNeg.xml");
+    system.Readfile("xmlTests/NoPageCount.xml");
     system.assignALL();
     system.processFirstJob();
     system.printReport();
