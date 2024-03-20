@@ -43,12 +43,6 @@ std::string PrintSystem::printReport() const {
 
 
 
-
-
-
-
-
-
 // Functie om gegevens uit het bestand te lezen
 void PrintSystem::Readfile(const string &filename) {
     REQUIRE(FileExists(filename), "Bestand bestaat niet.");
@@ -232,7 +226,7 @@ Job *PrintSystem::getNextPendingJob() const {
     }
     return NULL;
 }
-
+//
 const vector<Device *> &PrintSystem::getDevices() const {
     return devices;
 }
