@@ -18,8 +18,10 @@ protected:
 
 //Jobs:
 TEST_F(TestPrintSystem, NoPageCount){
-
+    ASSERT_ANY_THROW(system->Readfile("xmlTests/NoJobNumber.xml"));
 }
+
+
 
 TEST_F(TestPrintSystem, NoJobNumber){
 }

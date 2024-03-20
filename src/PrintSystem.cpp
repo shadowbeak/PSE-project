@@ -53,9 +53,6 @@ void PrintSystem::Readfile(const string &filename) {
         return;
     }
 
-
-
-
     TiXmlElement* root = doc.FirstChildElement();
     if (root == NULL) {
         cerr << "Fout bij het lezen van het bestand: Geen SYSTEM-root." << endl;
@@ -83,20 +80,30 @@ void PrintSystem::Readfile(const string &filename) {
 void PrintSystem::ReadDevice(TiXmlElement *deviceElement) {
     REQUIRE(deviceElement != NULL, "DeviceElement is een null pointer");
 
-    Device* device = new Device(deviceElement);
-    devices.push_back(device);
+    try{
+        Device* device = new Device(deviceElement);
+        devices.push_back(device);
+        ENSURE(!devices.empty(), "Er werden geen apparaten gelezen uit ons XML-bestand.");
 
-    ENSURE(!devices.empty(), "Er werden geen apparaten gelezen uit ons XML-bestand.");
+    }catch(const std::runtime_error& error){
+        std::cerr << error.what();
+    }
+
 }
 
 // Functie om een taak uit XML te lezen
 void PrintSystem::ReadJob(TiXmlElement *jobElement) {
     REQUIRE(jobElement != NULL, "JobElement is een null pointer");
 
-    Job* job = new Job(jobElement);
-    jobs.push_back(job);
+    try{
+        Job* job = new Job(jobElement);
+        jobs.push_back(job);
+        ENSURE(!jobs.empty(), "Er werden geen taken gelezen uit ons XML-bestand.");
 
-    ENSURE(!jobs.empty(), "Er werden geen taken gelezen uit ons XML-bestand.");
+    }catch(const std::runtime_error& error){
+        std::cerr << error.what();
+    }
+
 }
 
 // Functie om het minst belaste apparaat op te halen

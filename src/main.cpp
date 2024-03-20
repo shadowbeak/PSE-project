@@ -6,9 +6,9 @@
 
 int main() {
     PrintSystem system;
-    system.Readfile("xmlTests/EmissionIsNeg.xml");
-    //system.assignALL();
-    //std::cout << system.printReport() << std::endl;
+    system.Readfile("xmlTests/NoPageCount.xml");
+    system.assignALL();
+    std::cout << system.printReport() << std::endl;
 
     return 0;
 }
