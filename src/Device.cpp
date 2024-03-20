@@ -51,6 +51,7 @@ Device::Device(TiXmlElement *device_node) {
 
     EXPECT(!SP_temp.empty(), "Geen speed opgegeven.");
     EXPECT(isInt(SP_temp) , "Speed moet een integer zijn.");
+    EXPECT(isNegativeInt(SP_temp), "Speed mag niet negatief zijn");
     speed = stoi(SP_temp);
 }
 

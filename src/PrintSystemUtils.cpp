@@ -75,18 +75,46 @@ bool FileCompare(const std::string leftFileName, const std::string rightFileName
     return result;
 }
 
-//extra toevoeging
 bool isInt(const std::string& str) {
     if (str.empty()) {
         return false;
     }
-    for (char c : str) {
-        if (!std::isdigit(c)) {
+
+    size_t start = 0;
+
+    if (str[0] == '-') {
+        if (str.size() == 1)
+            return false;
+        start = 1;
+    }
+
+    for (size_t i = start; i < str.size(); ++i) {
+        if (!std::isdigit(str[i])) {
             return false;
         }
     }
     return true;
 }
+
+bool isNegativeInt(const std::string& str) {
+    if (str.empty()) {
+        return false;
+    }
+
+    // Controleer of het eerste teken een min-teken is en de rest cijfers zijn
+    if (str[0] == '-') {
+        for (size_t i = 1; i < str.size(); ++i) {
+            if (!std::isdigit(str[i])) {
+                return false;
+            }
+        }
+        // Als er minstens één cijfer na het min-teken is, is het een negatieve integer
+        return str.size() > 1;
+    }
+
+    return false; // Geen min-teken aan het begin
+}
+
 
 bool isNotInDevice(Job *job, std::deque<Job *>& jobs){
     int job1n = job->getJobNumber();

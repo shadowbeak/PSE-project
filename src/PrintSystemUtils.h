@@ -59,6 +59,8 @@ bool is_number(const std::string& s);
 std::string constructFilename(const std::string& storageDirectory, const std::string& reportExtension, const std::string& name);
 
 bool isInt(const std::string& str);
+bool isNegativeInt(const std::string& str);
+
 
 bool isNotInDevice(Job *job, std::deque<Job*>& jobs);
 
