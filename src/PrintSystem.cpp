@@ -110,7 +110,7 @@ Device* PrintSystem::getLeastBurdened() const {
     return leastBurdenedDevice;
 }
 
-// Functie om taak aan apparaat toe te wijzen
+
 Device* PrintSystem::deviceAssignment(Job *job) const {
     REQUIRE(!devices.empty(), "Er werden geen apparaten gevonden");
     REQUIRE(job->getBeingWorkedOnBy() == NULL, "Er wordt al aan deze taak gewerkt op een ander apparaat.");
@@ -121,7 +121,7 @@ Device* PrintSystem::deviceAssignment(Job *job) const {
     return device;
 }
 
-// Functie om alle taken aan apparaten toe te wijzen
+
 void PrintSystem::assignALL() const {
     REQUIRE(!devices.empty(), "Geen apparaten gevonden");
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
