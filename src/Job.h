@@ -7,41 +7,113 @@ using namespace std;
 
 class Device;
 
-/**
- * \brief Een klasse die een afdruktaak vertegenwoordigt
- * 
- * Deze klasse bevat informatie over een afdruktaak, zoals het taaknummer, het paginanummer, de gebruikersnaam, enz.
- */
+
 class Job {
 private:
-    int jobNumber; /**< Het taaknummer */
-    int pageCount; /**< Het aantal pagina's */
-    string userName; /**< De gebruikersnaam */
-    bool finished = false; /**< Geeft aan of de taak is voltooid */
-    bool inProcess = false; /**< Geeft aan of de taak wordt verwerkt */
-    Device* beingWorkedOnBy = NULL; /**< Het apparaat waaraan de taak wordt toegewezen */
+    int jobNumber;
+    int pageCount;
+    string userName;
+    bool finished = false;
+    bool inProcess = false;
+    Device* beingWorkedOnBy = NULL;
 
 public:
 
-    //constructors en destructor
-    Job(int jobNumber, int pageCount, const string &userName); /**< Constructor met parameters */
-    explicit Job(TiXmlElement *jobElement); /**< Constructor op basis van XML-elementen */
-    virtual ~Job(); /**< Destructor */
+    /**
+     * \Constructor met parameters
+     */
+    Job(int jobNumber, int pageCount, const string &userName);
 
-    //getters and setters
-    int getJobNumber() const; /**< Geeft het taaknummer terug */
-    void setJobNumber(int jobNumber); /**< Stelt het taaknummer in */
-    int getPageCount() const; /**< Geeft het aantal pagina's terug */
-    void setPageCount(int pageCount); /**< Stelt het aantal pagina's in */
-    bool isFinished() const; /**< Controleert of de taak is voltooid */
-    void setFinished(bool finished); /**< Stelt in of de taak is voltooid */
-    bool isInProcess() const; /**< Controleert of de taak wordt verwerkt */
-    void setInProcess(bool inProcess); /**< Stelt in of de taak wordt verwerkt */
-    const string &getUserName() const; /**< Geeft de gebruikersnaam terug */
-    string EndMessage() const; /**< Geeft een bericht terug dat de voltooiing van de taak aangeeft */
+    /**
+     * \Constructor op basis van XML-elementen
+     * @EXPECT
+     *  -  EXPECT(!JN_temp.empty(), "Geen jobNumber opgegeven.");
+        -  EXPECT(isInt(JN_temp), "JobNumber moet een integer zijn.");
+        -  EXPECT(!isNegativeInt(JN_temp), "JobNumber mag niet negatief zijn.");
 
-    Device *getBeingWorkedOnBy() const; /**< Geeft het apparaat terug waaraan de taak wordt toegewezen */
-    void setBeingWorkedOnBy(Device *beingWorkedOnBy); /**< Stelt het apparaat in waaraan de taak wordt toegewezen */
+        -  EXPECT(!PC_temp.empty(), "Geen pageCount opgegeven.");
+        -  EXPECT(isInt(PC_temp), "PageCount moet een integer zijn");
+        -  EXPECT(!isNegativeInt(PC_temp), "PageCount mag niet negatief zijn.");
+
+        -  EXPECT(!UN_temp.empty(), "Geen userName opgegeven.");
+     */
+    explicit Job(TiXmlElement *jobElement);
+
+    /**
+     * \Destructor
+     */
+    virtual ~Job();
+
+    /**
+     * \Geeft het taaknummer terug
+     *  @return int jobnummer
+     */
+    int getJobNumber() const;
+
+    /**
+     * \Stelt het taaknummer in
+     */
+    void setJobNumber(int jobNumber);
+
+    /**
+     * \Geeft het aantal pagina's terug
+     */
+    int getPageCount() const;
+
+    /**
+     * \Stelt het aantal pagina's in
+     */
+    void setPageCount(int pageCount);
+
+    /**
+     * Controleert of de taak is voltooid
+     * @require
+     *  - Het Job-object moet goed zijn geïnitialiseerd
+     * @ensure
+     *  - True als de taak is voltooid, anders false
+     */
+    bool isFinished() const;
+
+    /**
+     * \Stelt in of de taak is voltooid
+     */
+    void setFinished(bool finished);
+
+    /**
+     * \Controleert of de taak wordt verwerkt
+
+     */
+    bool isInProcess() const;
+
+    /**
+     * \Stelt in of de taak wordt verwerkt
+     */
+    void setInProcess(bool inProcess);
+
+    /**
+     * \Geeft de gebruikersnaam terug
+     */
+    const string &getUserName() const;
+
+    /**
+     * \Geeft een bericht terug dat de voltooiing van de taak aangeeft
+     * @require
+     *    - REQUIRE(getBeingWorkedOnBy() != NULL, "Job is not assigned to a device");
+     */
+    string EndMessage() const;
+
+    /**
+     * \Geeft het apparaat terug waaraan de taak wordt toegewezen
+
+     */
+    Device *getBeingWorkedOnBy() const;
+
+    /**
+     * \Stelt het apparaat in waaraan de taak wordt toegewezen
+
+     */
+    void setBeingWorkedOnBy(Device *beingWorkedOnBy);
+
 };
 
 #endif //PSE_PROJECT_JOB_H

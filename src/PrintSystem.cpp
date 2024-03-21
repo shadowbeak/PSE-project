@@ -8,10 +8,8 @@
 
 
 using namespace std;
-// constructor
 PrintSystem::PrintSystem() {}
 
-// Destructor
 PrintSystem::~PrintSystem() {
     for (Device* &device : devices) {
         delete device;
@@ -23,8 +21,6 @@ PrintSystem::~PrintSystem() {
     jobs.clear();
 }
 
-// Functie om rapport af te drukken
-// Genereert een rapportbestand met apparaatinformatie
 std::string PrintSystem::printReport() const {
     string filename = constructFilename(reportDirectory,reportExtension, reportFileName);
     ofstream report;
@@ -42,7 +38,6 @@ std::string PrintSystem::printReport() const {
 
 
 
-// Functie om gegevens uit het bestand te lezen
 void PrintSystem::Readfile(const string &filename) {
     REQUIRE(FileExists(filename), "Bestand bestaat niet.");
 
@@ -78,7 +73,6 @@ void PrintSystem::Readfile(const string &filename) {
 
 
 
-// Functie om een apparaat uit XML te lezen
 void PrintSystem::ReadDevice(TiXmlElement *deviceElement) {
     REQUIRE(deviceElement != NULL, "DeviceElement is een null pointer");
 
@@ -91,7 +85,6 @@ void PrintSystem::ReadDevice(TiXmlElement *deviceElement) {
 }
 
 
-// Functie om een taak uit XML te lezen
 void PrintSystem::ReadJob(TiXmlElement *jobElement) {
     REQUIRE(jobElement != NULL, "JobElement is een null pointer");
 
@@ -103,14 +96,11 @@ void PrintSystem::ReadJob(TiXmlElement *jobElement) {
     }
 }
 
-// Functie om het minst belaste apparaat op te halen
 Device* PrintSystem::getLeastBurdened() const {
     REQUIRE(!devices.empty(), "Geen apparaten gevonden.");
 
-    // Initialiseer het minst belaste apparaat met het eerste apparaat
     Device* leastBurdenedDevice = devices.front();
 
-    // Doorloop alle apparaten en werk het minst belaste apparaat bij indien nodig
     for (std::vector<Device*>::const_iterator it  = devices.begin() + 1; it != devices.end(); ++it) {
         if ((*it)->getJobBurden() < leastBurdenedDevice->getJobBurden()) {
             leastBurdenedDevice = *it;
@@ -143,7 +133,7 @@ void PrintSystem::assignALL() const {
     }
 }
 
-// Functie om de eerste niet-verwerkte taak te verwerken
+
 void PrintSystem::processFirstJob() const {
     // Voorwaarden
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
@@ -151,23 +141,21 @@ void PrintSystem::processFirstJob() const {
     REQUIRE(getNextPendingJob() != NULL, "Alle taken zijn verwerkt");
     REQUIRE(getNextPendingJob()->getBeingWorkedOnBy() != NULL, "Taak is niet toegewezen aan een apparaat");
 
-    // Haal de eerste onverwerkte taak en het toegewezen apparaat op
+
     Job *job = getNextPendingJob();
     Device *device = job->getBeingWorkedOnBy();
 
-    // Bewaar de initiële belasting van het apparaat
     int initialBurden = device->getJobBurden();
 
-    // Stel de taak in als zijn de verwerkt
     job->setInProcess(true);
 
-    // Verwerk de taak op het toegewezen apparaat en genereer een bericht
+
     std::string bericht = device->processJob();
 
-    // Construeer de bestandsnaam voor het schrijven van het bericht naar een bestand
+
     std::string bestandsnaam = constructFilename(processDirectory, processExtension, processFileName);
 
-    // Schrijf het bericht naar een bestand
+
     std::ofstream outputFile(bestandsnaam, std::ios_base::app);
     if (!outputFile.is_open()) {
         throw std::runtime_error("Kan het bestand niet openen.");
@@ -182,13 +170,13 @@ void PrintSystem::processFirstJob() const {
         outputFile.close(); // Sluit het bestand voordat de uitzondering opnieuw wordt gegenereerd
     }
 
-    // Naverzekeringsvoorwaarden
+
     ENSURE(job->isFinished(), "Taak is niet voltooid");
     ENSURE(job->getBeingWorkedOnBy()->getJobBurden() != initialBurden, "Apparaat heeft de taak niet verwerkt");
 }
 
 
-// Functie om te controleren of alle attributen van taken en apparaten niet-negatief zijn
+
 bool PrintSystem::checkJobs() const {
     for (Job* const& job:jobs) {
         if (isNegative(job->getJobNumber())) {
@@ -211,7 +199,6 @@ bool PrintSystem::checkDevices() const {
     return true;
 }
 
-// Functie om te controleren of het systeem geldig is
 bool PrintSystem::checkSystem() const {
     if (checkJobs() && checkDevices()) {
         return true;
@@ -219,7 +206,6 @@ bool PrintSystem::checkSystem() const {
     return false;
 }
 
-// Functie om de eerste niet-verwerkte taak op te halen
 Job *PrintSystem::getNextPendingJob() const {
     REQUIRE(!jobs.empty(), "Geen taken gevonden");
     for (Job *job : jobs) {

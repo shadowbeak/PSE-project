@@ -6,15 +6,14 @@
 #include "Job.h"
 #include <deque>
 using namespace std;
-
-// Een klasse die een apparaat voorstelt in het printsysteem
+-// Een klasse die een apparaat voorstelt in het printsysteem
 
 class Device {
 private:
-    string name; // Naam van het apparaat
-    int emission; // Uitstoot van het apparaat
-    int speed; // Snelheid van het apparaat
-    std::deque<Job *> jobs; // De lijst met taken die momenteel worden verwerkt door het apparaat
+    string name;
+    int emission;
+    int speed;
+    std::deque<Job *> jobs;
 
 public:
     // Constructoren
@@ -23,7 +22,6 @@ public:
     virtual ~Device();
 
     // Getters en setters voor de private leden van de klasse
-
     
 	/**
 	 * Constructor voor apparaat
