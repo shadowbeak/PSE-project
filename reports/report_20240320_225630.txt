@@ -1,0 +1,8 @@
+KLAWIprinter12 (CO2: 3g/page):
+	* Current:
+		[#99854|NoahMasudi]
+	* Queue:
+		[#12354|AdamBoustta]
+
+KLAWIprinter35 (CO2: 6g/page):
+	No jobs

@@ -1,0 +1,3 @@
+Office_Printer (CO2: 4g/page):
+	* Current:
+		[#-6|Directeur]
