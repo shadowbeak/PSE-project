@@ -36,7 +36,7 @@ Device::Device(TiXmlElement *device_node) {
             SP_temp = nodeValue;
 
         } else {
-            EXPECT(false, "Unknown attribute for Device: '" + nodeName + "'");
+            EXPECT(false, "Onbekend attribuut voor Device: '" + nodeName + "'");
         }
 
         node = node->NextSibling();
