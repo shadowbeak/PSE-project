@@ -5,11 +5,6 @@
         <speed>50</speed>
     </DEVICE>
     <JOB>
-        <jobNumber>99854</jobNumber>
-        <pageCount>10</pageCount>
-        <userName>Klawi</userName>
-    </JOB>
-    <JOB>
         <jobNumber>-6</jobNumber>
         <pageCount>2</pageCount>
         <userName>Directeur</userName>

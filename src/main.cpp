@@ -6,7 +6,7 @@
 
 int main() {
     PrintSystem system;
-    system.Readfile("xmlTests/NoPageCount.xml");
+    system.Readfile("xmlTests/ReportPrintTest.xml");
     system.assignALL();
     system.processFirstJob();
     system.printReport();

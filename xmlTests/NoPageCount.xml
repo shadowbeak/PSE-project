@@ -1,17 +1,12 @@
 <SYSTEM>
     <DEVICE>
-        <name>KLAWIprinter12</name>
+        <name>Printer_gumbr</name>
         <emission>3</emission>
         <speed>90</speed>
     </DEVICE>
     <JOB>
-        <jobNumber>99854</jobNumber>
-        <pageCount></pageCount>
-        <userName>NoahMasudi</userName>
-    </JOB>
-    <JOB>
         <jobNumber>12354</jobNumber>
-        <pageCount>2</pageCount>
+        <pageCount></pageCount>
         <userName>AdamBoustta</userName>
     </JOB>
 </SYSTEM>
