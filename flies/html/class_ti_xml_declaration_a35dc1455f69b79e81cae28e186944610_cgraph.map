@@ -1,0 +1,11 @@
+<map id="TiXmlDeclaration::Clone" name="TiXmlDeclaration::Clone">
+<area shape="rect" id="Node000001" title="Creates a copy of this Declaration and returns it." alt="" coords="5,31,164,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_declaration.html#a189de17b3e04d4e5b1c385336f214af1" title=" " alt="" coords="238,5,407,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,33,222,27,223,32,164,38"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_declaration.html#aa0484d059bea0ea1acb47c9094382d79" title="Construct an empty declaration." alt="" coords="212,56,433,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="164,50,197,53,196,59,164,55"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#aaadd5bb9c94f84c4472b649b95de4a0b" title=" " alt="" coords="481,5,615,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,16,466,16,466,21,407,21"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a2a38329ca5d3f28f98ce932b8299ae90" title=" " alt="" coords="663,5,807,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="616,16,648,16,648,21,616,21"/>
+</map>

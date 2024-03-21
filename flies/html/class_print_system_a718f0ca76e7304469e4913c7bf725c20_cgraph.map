@@ -1,0 +1,10 @@
+<map id="PrintSystem::checkSystem" name="PrintSystem::checkSystem">
+<area shape="rect" id="Node000001" title="Controleert het gehele systeem." alt="" coords="5,31,187,57"/>
+<area shape="rect" id="Node000002" href="$class_print_system.html#a5d43310e4bbf19bb95cc03e4d887be3e" title="Controleert de afdrukapparaten." alt="" coords="235,5,416,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,31,219,28,219,33,187,37"/>
+<area shape="rect" id="Node000004" href="$class_print_system.html#a46263d69fec72681c40fd224408c45a3" title="Controleert de printtaken." alt="" coords="244,56,407,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,51,228,56,228,61,187,57"/>
+<area shape="rect" id="Node000003" href="$_print_system_utils_8cpp.html#a52ce48e83d76d3a35a89530e96736dca" title=" " alt="" coords="464,31,544,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,29,449,34,448,39,416,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="407,55,448,49,449,54,408,60"/>
+</map>

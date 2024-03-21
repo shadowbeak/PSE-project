@@ -1,0 +1,7 @@
+<map id="TiXmlNode::IterateChildren" name="TiXmlNode::IterateChildren">
+<area shape="rect" id="Node000001" title="This flavor of IterateChildren searches for children with a particular &#39;value&#39;." alt="" coords="5,31,179,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="232,5,378,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,31,216,26,217,32,179,36"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#a3db05b0249218e94fd41c766df87426c" title="Navigate to a sibling node." alt="" coords="227,56,383,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,52,211,56,211,61,178,57"/>
+</map>

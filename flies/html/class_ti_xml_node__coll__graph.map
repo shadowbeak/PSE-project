@@ -1,0 +1,8 @@
+<map id="TiXmlNode" name="TiXmlNode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,199,92,225"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="108,200,115,204,118,212,110,223,92,227,91,221,107,219,113,212,111,208,105,204"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_base.html" title=" " alt="" coords="9,96,92,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,138,53,198,48,198,48,138"/>
+<area shape="rect" id="Node000003" href="$struct_ti_xml_cursor.html" title=" " alt="" coords="5,5,96,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="53,48,53,95,48,95,48,48"/>
+</map>

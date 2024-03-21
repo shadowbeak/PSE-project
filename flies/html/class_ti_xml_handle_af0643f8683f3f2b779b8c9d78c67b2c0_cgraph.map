@@ -1,0 +1,13 @@
+<map id="TiXmlHandle::FirstChildElement" name="TiXmlHandle::FirstChildElement">
+<area shape="rect" id="Node000001" title="Return a handle to the first child element." alt="" coords="5,81,209,108"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#a12c973e1da9e90a178924b8ea5a5f4d1" title="Convenience function to get through elements." alt="" coords="257,56,450,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,82,241,78,242,83,209,87"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_handle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer." alt="" coords="268,107,439,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="209,103,252,107,252,112,209,108"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="504,5,649,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,53,499,33,500,39,416,58"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a3db05b0249218e94fd41c766df87426c" title="Navigate to a sibling node." alt="" coords="498,56,654,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="451,67,482,67,482,72,451,72"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_node.html#ad05bc141115b9e49f5ab2ee72cf6cfd1" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="500,107,652,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="416,81,500,100,499,105,415,86"/>
+</map>

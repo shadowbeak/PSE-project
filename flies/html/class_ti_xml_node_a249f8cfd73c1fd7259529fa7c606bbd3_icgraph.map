@@ -1,0 +1,9 @@
+<map id="TiXmlNode::ToText" name="TiXmlNode::ToText">
+<area shape="rect" id="Node000001" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="209,56,338,83"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_element.html#af0f814ecbd43d50d4cdbdf4354d3da39" title=" " alt="" coords="6,5,160,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,54,135,35,137,30,206,49"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_element.html#aa31a15cddfb8601a31236fe7d2569fb4" title=" " alt="" coords="15,56,151,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,72,151,72,151,67,193,67"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_printer.html#a6dccaf5ee4979f13877690afe28721e8" title="Visit an element." alt="" coords="5,107,161,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,90,137,109,135,103,205,85"/>
+</map>

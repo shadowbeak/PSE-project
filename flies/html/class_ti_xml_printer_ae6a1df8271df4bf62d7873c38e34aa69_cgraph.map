@@ -1,0 +1,7 @@
+<map id="TiXmlPrinter::VisitExit" name="TiXmlPrinter::VisitExit">
+<area shape="rect" id="Node000001" title="Visit an element." alt="" coords="5,31,153,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="201,5,346,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,32,185,28,185,33,153,37"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#a3b260dd22313f310c0acb2e68ada6f5b" title=" " alt="" coords="212,56,335,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,51,196,57,196,62,152,56"/>
+</map>

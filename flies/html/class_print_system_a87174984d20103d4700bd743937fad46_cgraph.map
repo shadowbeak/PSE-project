@@ -1,0 +1,17 @@
+<map id="PrintSystem::deviceAssignment" name="PrintSystem::deviceAssignment">
+<area shape="rect" id="Node000001" title="Wijs een taak toe aan een apparaat." alt="" coords="5,81,212,108"/>
+<area shape="rect" id="Node000002" href="$class_device.html#acd52ee8be788ae1f4d1d0fe03edbef66" title=" " alt="" coords="309,5,417,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,78,259,41,293,32,294,37,260,47,149,83"/>
+<area shape="rect" id="Node000005" href="$class_job.html#a0e019673185ec00768a6e190dbcd9b16" title=" " alt="" coords="274,56,452,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="212,82,258,77,259,82,212,87"/>
+<area shape="rect" id="Node000006" href="$class_print_system.html#a550c2a1bc47d0f7aed7d27043e71624c" title="Geeft het minst belaste apparaat terug." alt="" coords="260,107,466,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="212,102,244,106,244,111,212,108"/>
+<area shape="rect" id="Node000008" href="$class_job.html#a55bdc2f44a39673d4bf74b6a057de9c8" title=" " alt="" coords="274,157,452,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="149,106,260,143,288,150,287,156,259,148,147,111"/>
+<area shape="rect" id="Node000003" href="$_print_system_utils_8cpp.html#a005e84ef7288ed3f2894e127c8261f04" title=" " alt="" coords="538,5,637,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,16,522,16,522,21,417,21"/>
+<area shape="rect" id="Node000004" href="$class_job.html#a5d069e2bb240f3cdb096f3e983bb5ccd" title=" " alt="" coords="708,5,841,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="637,16,693,16,693,21,637,21"/>
+<area shape="rect" id="Node000007" href="$class_device.html#a2fd62870f57563cfca8aeef45adf9c9d" title="Geeft de belasting van het apparaat terug Geeft de belasting van het apparaat terug als een integer." alt="" coords="514,107,660,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="467,117,498,117,498,123,467,123"/>
+</map>

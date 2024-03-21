@@ -1,0 +1,7 @@
+<map id="TiXmlVisitor::VisitEnter" name="TiXmlVisitor::VisitEnter">
+<area shape="rect" id="Node000001" title="Visit a document." alt="" coords="214,31,368,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_document.html#a8ddd6eec722cbd25900bbac664909bac" title=" " alt="" coords="5,5,166,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,35,166,31,166,26,199,30"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_element.html#a01d33358cce9d1817b557d314dda3779" title=" " alt="" coords="11,56,160,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,58,161,63,160,57,198,53"/>
+</map>

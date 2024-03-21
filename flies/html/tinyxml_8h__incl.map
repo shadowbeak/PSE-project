@@ -1,0 +1,17 @@
+<map id="tinyxml.h" name="tinyxml.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,5,281,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,70,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,35,85,78,83,73,207,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,80,154,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,35,159,74,157,69,222,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,80,241,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,34,224,67,220,65,236,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="273,155,338,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="252,31,297,139,292,141,247,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="375,155,444,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="282,21,312,28,344,38,374,55,400,78,408,93,413,108,415,139,410,140,407,109,403,95,395,82,371,59,341,43,310,33,281,27"/>
+<area shape="rect" id="Node000007" href="$tinystr_8h.html" title=" " alt="" coords="317,80,385,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="264,30,321,69,318,73,261,35"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="345,109,324,143,319,140,341,106"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="363,106,392,141,388,144,359,109"/>
+</map>

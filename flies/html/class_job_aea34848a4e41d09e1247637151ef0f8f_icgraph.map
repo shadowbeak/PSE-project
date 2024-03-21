@@ -1,0 +1,8 @@
+<map id="Job::isFinished" name="Job::isFinished">
+<area shape="rect" id="Node000001" title=" " alt="" coords="428,5,536,32"/>
+<area shape="rect" id="Node000002" href="$class_print_system.html#ae5ef6b0bc034a1a5ee2f372ff681f66c" title="Verwerk de eerste taak." alt="" coords="5,5,199,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,21,199,21,199,16,412,16"/>
+<area shape="rect" id="Node000003" href="$class_device.html#adeb82433fdb9ad05c85b93536f890ab6" title="Verwerkt een taak Verwerkt de eerste taak van het apparaat en retourneert een bericht met het resulta..." alt="" coords="247,31,380,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="413,32,381,37,380,31,412,26"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="231,37,199,33,199,28,232,32"/>
+</map>

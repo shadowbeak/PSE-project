@@ -1,0 +1,9 @@
+<map id="TiXmlUnknown::TiXmlUnknown" name="TiXmlUnknown::TiXmlUnknown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,203,32"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_unknown.html#afeb334446bcbe13ce15131e1629712be" title=" " alt="" coords="251,5,408,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,16,235,16,235,21,203,21"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#aaadd5bb9c94f84c4472b649b95de4a0b" title=" " alt="" coords="456,5,590,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,16,440,16,440,21,408,21"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a2a38329ca5d3f28f98ce932b8299ae90" title=" " alt="" coords="638,5,782,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="591,16,623,16,623,21,591,21"/>
+</map>

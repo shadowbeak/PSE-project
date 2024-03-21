@@ -1,0 +1,11 @@
+<map id="TiXmlUnknown::Clone" name="TiXmlUnknown::Clone">
+<area shape="rect" id="Node000001" title="Creates a copy of this Unknown and returns it." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_unknown.html#afeb334446bcbe13ce15131e1629712be" title=" " alt="" coords="220,5,377,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,33,204,27,204,32,152,38"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_unknown.html#a945f09b3c6538099c69fc563216750c3" title=" " alt="" coords="200,56,397,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="152,50,184,53,184,59,152,55"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#aaadd5bb9c94f84c4472b649b95de4a0b" title=" " alt="" coords="445,5,579,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,16,430,16,430,21,377,21"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a2a38329ca5d3f28f98ce932b8299ae90" title=" " alt="" coords="627,5,771,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="580,16,612,16,612,21,580,21"/>
+</map>

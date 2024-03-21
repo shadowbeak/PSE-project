@@ -1,0 +1,7 @@
+<map id="TiXmlFOpen" name="TiXmlFOpen">
+<area shape="rect" id="Node000001" title=" " alt="" coords="222,31,313,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_document.html#a879cdf5e981b8b2d2ef82f2546dd28fb" title="Load a file using the given filename. Returns true if successful." alt="" coords="5,5,174,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,38,174,33,175,28,207,33"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_document.html#ae641f33784381017c44e107cc2c86b5c" title="Save a file using the given filename. Returns true if successful." alt="" coords="5,56,174,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,55,175,60,174,55,206,50"/>
+</map>

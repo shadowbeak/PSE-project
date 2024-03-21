@@ -1,0 +1,11 @@
+<map id="TiXmlComment::operator=" name="TiXmlComment::operator=">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,177,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#a708e7f953df61d4d2d12f73171550a4b" title="Delete all the children of this node. Does not affect &#39;this&#39;." alt="" coords="245,5,365,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,31,229,25,229,30,177,36"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_comment.html#aaeb8a0b2d503f603879a2d04ceb54295" title=" " alt="" coords="225,56,385,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,52,210,55,209,61,177,57"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#aaadd5bb9c94f84c4472b649b95de4a0b" title=" " alt="" coords="433,56,567,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="386,67,417,67,417,72,386,72"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_node.html#a2a38329ca5d3f28f98ce932b8299ae90" title=" " alt="" coords="615,56,759,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="568,67,600,67,600,72,568,72"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Device::processJob" name="Device::processJob">
+<area shape="rect" id="Node000001" title="Verwerkt een taak Verwerkt de eerste taak van het apparaat en retourneert een bericht met het resulta..." alt="" coords="247,5,380,32"/>
+<area shape="rect" id="Node000002" href="$class_print_system.html#ae5ef6b0bc034a1a5ee2f372ff681f66c" title="Verwerk de eerste taak." alt="" coords="5,5,199,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,21,199,21,199,16,231,16"/>
+</map>

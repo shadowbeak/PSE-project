@@ -1,0 +1,18 @@
+<map id="TiXmlDocument::LoadFile" name="TiXmlDocument::LoadFile">
+<area shape="rect" id="Node000001" title="Load a file using the given filename. Returns true if successful." alt="" coords="5,92,174,119"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_document.html#a4c852a889c02cf251117fd1d9fe1845f" title=" " alt="" coords="222,29,390,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,89,241,58,243,64,139,94"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_document.html#a735c23e318597b920c94eae77fa206de" title=" " alt="" coords="222,92,390,119"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="174,103,206,103,206,108,174,108"/>
+<area shape="rect" id="Node000008" href="$tinyxml_8cpp.html#aae316d26cdf72c45de918553b2c61e20" title=" " alt="" coords="260,143,352,169"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="150,117,245,139,244,144,149,122"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="269,30,263,21,267,11,282,5,306,3,332,5,345,12,343,16,330,10,306,8,283,10,271,15,268,20,274,27"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#a3b260dd22313f310c0acb2e68ada6f5b" title=" " alt="" coords="461,16,584,43"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="390,35,445,31,445,37,391,40"/>
+<area shape="rect" id="Node000005" href="$struct_ti_xml_cursor.html#a1e6fa622b59dafb71b6efe595105dcdd" title=" " alt="" coords="459,67,587,93"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="390,93,443,87,443,92,390,98"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_parsing_data.html#af293019e0dd114e20d64e0abd0e36d7d" title=" " alt="" coords="438,117,607,144"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="390,112,423,116,422,122,390,118"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_parsing_data.html#a65cee8ab77a36c605db08c84b4c30a7d" title=" " alt="" coords="438,168,607,195"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="359,117,391,128,439,154,457,160,455,165,437,158,389,133,357,122"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="TiXmlText::Clone" name="TiXmlText::Clone">
+<area shape="rect" id="Node000001" title="[internal use] Creates a new Element and returns it." alt="" coords="5,31,124,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_text.html#a480b8e0ad6b7833a73ecf2191195c9b5" title=" " alt="" coords="172,5,301,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,33,156,28,157,33,124,38"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_text.html#af659e77c6b87d684827f35a8f4895960" title=" " alt="" coords="349,56,490,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="124,46,334,61,333,66,124,51"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#aaadd5bb9c94f84c4472b649b95de4a0b" title=" " alt="" coords="353,5,487,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,16,337,16,337,21,301,21"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a2a38329ca5d3f28f98ce932b8299ae90" title=" " alt="" coords="538,31,682,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="488,25,523,30,523,35,487,30"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="491,57,523,53,523,58,491,63"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Device::getJobBurden" name="Device::getJobBurden">
+<area shape="rect" id="Node000001" title="Geeft de belasting van het apparaat terug Geeft de belasting van het apparaat terug als een integer." alt="" coords="822,31,968,57"/>
+<area shape="rect" id="Node000002" href="$class_print_system.html#a550c2a1bc47d0f7aed7d27043e71624c" title="Geeft het minst belaste apparaat terug." alt="" coords="567,5,774,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="806,37,774,33,774,28,807,31"/>
+<area shape="rect" id="Node000006" href="$class_print_system.html#ae5ef6b0bc034a1a5ee2f372ff681f66c" title="Verwerk de eerste taak." alt="" coords="574,56,767,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="807,57,768,61,767,56,806,51"/>
+<area shape="rect" id="Node000003" href="$class_print_system.html#a87174984d20103d4700bd743937fad46" title="Wijs een taak toe aan een apparaat." alt="" coords="313,5,519,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="552,21,520,21,520,16,552,16"/>
+<area shape="rect" id="Node000004" href="$class_print_system.html#aa4292a4e1482666e2d7c001d2cf1a263" title="Wijs alle taken toe." alt="" coords="103,5,265,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="297,21,266,21,266,16,297,16"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

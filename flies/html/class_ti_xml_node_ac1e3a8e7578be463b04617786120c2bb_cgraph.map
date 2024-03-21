@@ -1,0 +1,15 @@
+<map id="TiXmlNode::Identify" name="TiXmlNode::Identify">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,137,108"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_base.html#ae22522b2e8e1ac43102d16394f639fc8" title=" " alt="" coords="212,5,345,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,78,184,42,206,34,207,39,186,46,101,83"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_text.html#acb17ff7c5d09b2c839393445a3de5ea9" title="Turns on or off a CDATA representation of text." alt="" coords="204,56,353,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,84,188,78,189,83,137,89"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_base.html#ac0c3d66d8a9e6996a1fa016275e16875" title=" " alt="" coords="185,107,372,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,100,170,104,169,109,137,105"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_base.html#a51631e6986179558b9e5850723ed165a" title=" " alt="" coords="200,157,357,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="101,106,186,143,207,150,206,155,184,148,99,111"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_base.html#af56296d561c0bab4bc8e198cdcf5c48e" title=" " alt="" coords="420,107,591,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="372,117,404,117,404,123,372,123"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_base.html#a799f17405a86a5c2029618e85f11a097" title=" " alt="" coords="437,157,575,184"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="358,168,421,168,421,173,358,173"/>
+</map>
