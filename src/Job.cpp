@@ -46,7 +46,6 @@ Device *Job::getBeingWorkedOnBy() const {
 void Job::setBeingWorkedOnBy(Device *beingWorkedOnBy) {
     Job::beingWorkedOnBy = beingWorkedOnBy;
 }
-std::string finishMessage();
 
 Job::Job(int jobNumber, int pageCount, const std::string &userName) : jobNumber(jobNumber), pageCount(pageCount), userName(userName) {}
 

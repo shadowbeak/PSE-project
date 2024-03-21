@@ -5,7 +5,6 @@
 #include "PrintSystemUtils.h"
 #include "DesignByContract.h"
 #include "Device.h"
-#include <filesystem> // Voor bestandsmanipulatie
 
 
 using namespace std;
@@ -181,7 +180,6 @@ void PrintSystem::processFirstJob() const {
     } catch (const std::exception& e) {
         std::cerr << "Fout tijdens het schrijven naar het bestand: " << e.what() << std::endl;
         outputFile.close(); // Sluit het bestand voordat de uitzondering opnieuw wordt gegenereerd
-        throw; // Gooi de gevangen uitzondering opnieuw om verder te verspreiden
     }
 
     // Naverzekeringsvoorwaarden

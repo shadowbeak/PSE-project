@@ -18,13 +18,13 @@ protected:
 
 //Jobs:
 TEST_F(TestPrintSystem, NoPageCount){
-    /*system->Readfile("xmlTests/NoPageCount.xml");
+    system->Readfile("xmlTests/NoPageCount.xml");
 
     system->getDevices()[0]->addJob(system->getJobs()[0]);
     system->getDevices()[0]->addJob(system->getJobs()[1]);
 
     std::string NoPageCountReport = system->printReport();
-    EXPECT_TRUE(FileCompare(NoPageCountReport, "TESTS/NPCtest.txt"));$*/
+    EXPECT_TRUE(FileCompare(NoPageCountReport, "TESTS/NPCtest.txt"));
 
 }
 
@@ -44,7 +44,6 @@ TEST_F(TestPrintSystem, NoSpeed) {
 }
 
 TEST_F(TestPrintSystem, NoEmission){
-
 
 }
 
