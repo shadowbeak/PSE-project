@@ -1,0 +1,18 @@
+<map id="TiXmlElement::SetAttribute" name="TiXmlElement::SetAttribute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,183,133"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_attribute_set.html#a5e28f5d32f048fba85d04dc317495bdc" title=" " alt="" coords="254,59,384,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,103,239,91,240,97,174,109"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_attribute.html#a7e065df640116a62ea4f4b7da5449cc8" title="Set the value from an integer." alt="" coords="231,136,407,163"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="183,129,216,133,215,138,183,134"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_attribute_set.html#a745e50ddaae3bee93e4589321e0b9c1a" title=" " alt="" coords="461,56,613,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,74,444,71,445,76,384,79"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_attribute_set.html#a6d4f03bb84f70c78171db27a869225c1" title=" " alt="" coords="666,5,821,32"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="384,58,455,41,556,28,651,20,651,25,556,33,455,47,385,63"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_attribute.html#ab7fa3d21ff8d7c5764cf9af15b667a99" title="Set the name of this attribute." alt="" coords="455,107,618,133"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="385,89,446,101,445,106,384,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="594,53,671,34,672,39,595,58"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_attribute.html#a83798ef3113c3522154c3fc37b4db85b" title="Return the name of this attribute." alt="" coords="672,56,815,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="613,67,656,67,656,72,613,72"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_attribute.html#a2dae44178f668b3cb48101be4f2236a0" title="Set the value." alt="" coords="456,157,618,184"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="407,155,440,159,440,164,407,161"/>
+</map>

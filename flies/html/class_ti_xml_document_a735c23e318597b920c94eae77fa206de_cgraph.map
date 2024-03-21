@@ -1,0 +1,9 @@
+<map id="TiXmlDocument::SetError" name="TiXmlDocument::SetError">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,173,83"/>
+<area shape="rect" id="Node000002" href="$struct_ti_xml_cursor.html#a1e6fa622b59dafb71b6efe595105dcdd" title=" " alt="" coords="241,5,370,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,53,230,34,231,39,150,58"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_parsing_data.html#af293019e0dd114e20d64e0abd0e36d7d" title=" " alt="" coords="221,56,390,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,67,205,67,205,72,173,72"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_parsing_data.html#a65cee8ab77a36c605db08c84b4c30a7d" title=" " alt="" coords="221,107,390,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,81,231,100,230,105,149,86"/>
+</map>

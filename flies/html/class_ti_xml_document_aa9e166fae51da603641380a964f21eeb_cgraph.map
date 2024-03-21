@@ -1,0 +1,9 @@
+<map id="TiXmlDocument::Print" name="TiXmlDocument::Print">
+<area shape="rect" id="Node000001" title="Print this Document to a FILE stream." alt="" coords="5,56,152,83"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="205,5,351,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,53,207,34,208,39,135,58"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#a3db05b0249218e94fd41c766df87426c" title="Navigate to a sibling node." alt="" coords="200,56,356,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,67,184,67,184,72,152,72"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_base.html#a0de56b3f2ef14c65091a3b916437b512" title=" " alt="" coords="219,107,337,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="135,81,208,100,207,105,133,86"/>
+</map>

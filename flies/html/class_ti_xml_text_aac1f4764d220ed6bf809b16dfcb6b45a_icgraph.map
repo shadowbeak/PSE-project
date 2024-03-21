@@ -1,0 +1,7 @@
+<map id="TiXmlText::CDATA" name="TiXmlText::CDATA">
+<area shape="rect" id="Node000001" title="Queries whether this represents text using a CDATA section." alt="" coords="209,31,337,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_printer.html#a0857c5d32c59b9a257f9a49cb9411df5" title="Visit a text node." alt="" coords="21,5,145,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,36,145,30,146,24,194,31"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_printer.html#a6dccaf5ee4979f13877690afe28721e8" title="Visit an element." alt="" coords="5,56,161,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,57,162,62,161,56,193,52"/>
+</map>

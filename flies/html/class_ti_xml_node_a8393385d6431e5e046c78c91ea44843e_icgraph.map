@@ -1,0 +1,19 @@
+<map id="TiXmlNode::Clone" name="TiXmlNode::Clone">
+<area shape="rect" id="Node000001" title=" " alt="" coords="477,157,600,184"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_element.html#ab931f2208ed76ba03465d8a1f86b5935" title=" " alt="" coords="259,56,411,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="508,149,471,122,428,97,398,86,400,81,430,92,474,118,511,145"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_node.html#a274db3292218202805c093f66a964cb5" title=" " alt="" coords="246,107,424,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="467,156,391,137,392,131,468,150"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_node.html#a71e54e393336382bc9875f64aab5cb15" title=" " alt="" coords="241,157,429,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="461,173,430,173,430,168,461,168"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_node.html#af287a913ce46d8dbf7ef24fec69bbaf0" title=" " alt="" coords="248,208,422,235"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="468,191,392,210,391,205,467,186"/>
+<area shape="rect" id="Node000009" href="$class_ti_xml_node.html#a543208c2c801c84a213529541e904b9f" title=" " alt="" coords="252,259,418,285"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="511,196,474,224,430,249,400,261,398,256,428,244,471,219,508,192"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_element.html#a810ea8fa40844c01334e5af2a26794cb" title="Creates a new Element and returns it &#45; the returned element is a copy." alt="" coords="28,5,170,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="254,55,164,35,165,30,255,50"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_element.html#ad58d300f4cfc0016ffa6861ebb718a0b" title=" " alt="" coords="17,56,181,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="243,72,181,72,181,67,243,67"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_element.html#a1ca4465f3c2eac6a60e641cd7f1d9f7e" title=" " alt="" coords="5,107,193,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="255,89,165,109,164,103,254,84"/>
+</map>

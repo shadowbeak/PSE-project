@@ -1,0 +1,10 @@
+<map id="TiXmlBase::ReadName" name="TiXmlBase::ReadName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="404,31,558,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_attribute.html#ad62774421b814894b995af3b5d231dda" title=" " alt="" coords="213,56,356,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="389,59,357,63,356,57,388,53"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_element.html#af95c9165159fd9dfdcc5b894a3fcf85b" title=" " alt="" coords="14,5,156,32"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="388,41,156,26,157,21,389,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,54,140,35,141,30,215,49"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_declaration.html#a9839ea97ed687a2b7342fd7b0f04361b" title=" " alt="" coords="5,56,165,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="197,72,165,72,165,67,197,67"/>
+</map>

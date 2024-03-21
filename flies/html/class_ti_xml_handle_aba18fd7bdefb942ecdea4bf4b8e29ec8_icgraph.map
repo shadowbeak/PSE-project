@@ -1,0 +1,19 @@
+<map id="TiXmlHandle::TiXmlHandle" name="TiXmlHandle::TiXmlHandle">
+<area shape="rect" id="Node000001" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer." alt="" coords="257,183,428,209"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_handle.html#a9903b035444ee36450fe00ede403f920" title=" " alt="" coords="42,5,172,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,171,276,108,244,74,207,46,171,31,173,26,210,42,248,70,280,104,327,168"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_handle.html#a32585942abb28e03eea9c5223f38a659" title=" " alt="" coords="42,56,172,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,174,267,134,207,97,171,84,173,79,210,92,270,130,318,170"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_handle.html#afccc59d8a0daa8c5d78474fbed430ddb" title=" " alt="" coords="18,107,196,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,179,208,148,168,137,169,131,209,143,295,174"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_handle.html#a57a639ab0ac99ff9358f675a1b73049a" title=" " alt="" coords="18,157,196,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="241,188,196,183,196,178,242,183"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_handle.html#afb1b4c0eda970b320dfd262304cc1d04" title="Return a handle to the first child node." alt="" coords="29,208,185,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="242,209,185,216,185,210,241,204"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_handle.html#a586ebaca4a4d0909db65a765d95d5e59" title="Return a handle to the first child node with the given name." alt="" coords="29,259,185,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="295,218,209,249,169,261,168,255,208,244,293,213"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_handle.html#af0643f8683f3f2b779b8c9d78c67b2c0" title="Return a handle to the first child element." alt="" coords="5,309,209,336"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="318,222,270,262,210,300,180,311,178,306,207,295,267,258,315,218"/>
+<area shape="rect" id="Node000009" href="$class_ti_xml_handle.html#a3eaf2d2d4c087cd8a48da261042e75bc" title="Return a handle to the first child element with the given name." alt="" coords="5,360,209,387"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="327,224,280,288,248,322,210,350,185,362,183,357,207,346,244,318,276,284,323,221"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="isNotInDevice" name="isNotInDevice">
+<area shape="rect" id="Node000001" title=" " alt="" coords="724,5,823,32"/>
+<area shape="rect" id="Node000002" href="$class_device.html#acd52ee8be788ae1f4d1d0fe03edbef66" title=" " alt="" coords="567,5,676,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="708,21,676,21,676,16,708,16"/>
+<area shape="rect" id="Node000003" href="$class_print_system.html#a87174984d20103d4700bd743937fad46" title="Wijs een taak toe aan een apparaat." alt="" coords="313,5,519,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="552,21,520,21,520,16,552,16"/>
+<area shape="rect" id="Node000004" href="$class_print_system.html#aa4292a4e1482666e2d7c001d2cf1a263" title="Wijs alle taken toe." alt="" coords="103,5,265,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="297,21,266,21,266,16,297,16"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

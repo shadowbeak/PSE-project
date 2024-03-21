@@ -1,0 +1,17 @@
+<map id="TiXmlHandle::ChildElement" name="TiXmlHandle::ChildElement">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,183,133"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#a12c973e1da9e90a178924b8ea5a5f4d1" title="Convenience function to get through elements." alt="" coords="236,56,430,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,103,251,84,252,89,161,109"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_node.html#ac6105781c913a42aa7f3f17bd1964f7c" title=" " alt="" coords="231,107,435,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="183,117,215,117,215,123,183,123"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_handle.html#aba18fd7bdefb942ecdea4bf4b8e29ec8" title="Create a handle from any node (at any depth of the tree.) This can be a null pointer." alt="" coords="247,157,419,184"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="161,131,252,151,251,156,160,137"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="489,5,634,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,53,482,33,484,39,397,58"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a3db05b0249218e94fd41c766df87426c" title="Navigate to a sibling node." alt="" coords="483,107,639,133"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="397,81,484,100,482,105,396,86"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_node.html#ad05bc141115b9e49f5ab2ee72cf6cfd1" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="485,56,637,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="430,67,469,67,469,72,430,72"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="435,117,467,117,467,123,435,123"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="396,103,482,84,484,89,397,109"/>
+</map>

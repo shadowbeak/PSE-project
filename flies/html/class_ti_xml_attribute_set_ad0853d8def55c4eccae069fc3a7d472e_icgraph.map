@@ -1,0 +1,7 @@
+<map id="TiXmlAttributeSet::Last" name="TiXmlAttributeSet::Last">
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,31,390,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_element.html#a7064f4d269e816df3a22147e0b92502d" title=" " alt="" coords="5,5,188,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,36,188,32,188,27,221,31"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_element.html#adb3212c0c62ab98dba77b68d41c3fa9e" title="Access the last attribute in this element." alt="" coords="5,56,188,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,57,188,61,188,56,220,52"/>
+</map>

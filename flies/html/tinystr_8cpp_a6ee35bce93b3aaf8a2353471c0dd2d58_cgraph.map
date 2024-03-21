@@ -1,0 +1,14 @@
+<map id="operator+" name="operator+">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,82,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_string.html#a5db17f8314ffe2a89df0f0eb6c2a4bf5" title=" " alt="" coords="320,5,449,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,39,304,22,305,27,82,44"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_string.html#a88ecf9f0f00cb5c67b6b637958d7049c" title=" " alt="" coords="130,56,265,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="83,48,114,53,113,58,82,53"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="249,53,317,34,319,39,250,58"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_string.html#a0ca248f026e698f79b8aa4c9ab8e1571" title=" " alt="" coords="313,56,456,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,67,297,67,297,72,265,72"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_string.html#a1ab72f7ca9911674105dac346793bb9c" title=" " alt="" coords="325,107,444,133"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="250,81,319,100,317,105,249,86"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_string.html#aa392cbc180752a79f007f4f9280c7762" title=" " alt="" coords="323,157,447,184"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="218,81,261,111,314,143,327,149,324,154,312,148,258,116,215,85"/>
+</map>

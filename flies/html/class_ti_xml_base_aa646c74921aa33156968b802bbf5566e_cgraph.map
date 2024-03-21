@@ -1,0 +1,18 @@
+<map id="TiXmlBase::ReadText" name="TiXmlBase::ReadText">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,151,108"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_base.html#a5c309eba97f91f719e7834f6a7ddaf22" title=" " alt="" coords="223,5,362,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,78,198,48,235,35,237,40,200,53,117,83"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_base.html#af56296d561c0bab4bc8e198cdcf5c48e" title=" " alt="" coords="434,81,605,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="151,92,419,92,419,97,151,97"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_base.html#ac0c3d66d8a9e6996a1fa016275e16875" title=" " alt="" coords="199,107,386,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="151,101,183,104,182,110,151,106"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_base.html#a51631e6986179558b9e5850723ed165a" title=" " alt="" coords="214,157,371,184"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="110,106,200,143,222,150,220,155,198,148,108,111"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_base.html#ac5c08bf3deffcda0bf8ce2958372b584" title=" " alt="" coords="447,5,592,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,16,432,16,432,21,362,21"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_base.html#a07c765e3a7f979d343e646ea797b180b" title=" " alt="" coords="653,5,870,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="593,16,638,16,638,21,593,21"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="386,107,418,103,419,109,387,112"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_base.html#a799f17405a86a5c2029618e85f11a097" title=" " alt="" coords="451,157,589,184"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="372,168,435,168,435,173,372,173"/>
+</map>

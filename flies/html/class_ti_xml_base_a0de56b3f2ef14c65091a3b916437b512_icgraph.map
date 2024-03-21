@@ -1,0 +1,7 @@
+<map id="TiXmlBase::Print" name="TiXmlBase::Print">
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,31,317,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_element.html#aa31a15cddfb8601a31236fe7d2569fb4" title=" " alt="" coords="11,5,146,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,36,146,31,147,26,185,31"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_document.html#aa9e166fae51da603641380a964f21eeb" title="Print this Document to a FILE stream." alt="" coords="5,56,152,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,57,152,62,152,56,184,52"/>
+</map>

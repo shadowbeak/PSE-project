@@ -1,0 +1,9 @@
+<map id="TiXmlElement::Attribute" name="TiXmlElement::Attribute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,163,91"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_attribute_set.html#a6d4f03bb84f70c78171db27a869225c1" title=" " alt="" coords="213,5,367,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,61,225,34,227,39,134,66"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_attribute.html#a6caa8090d2fbb7966700a16e45ed33de" title=" " alt="" coords="211,56,369,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,75,195,75,195,80,163,80"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_attribute.html#a0da84344b585308878ec68605f1cbb20" title="Return the value of this attribute." alt="" coords="219,123,361,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,89,227,115,225,120,133,94"/>
+</map>

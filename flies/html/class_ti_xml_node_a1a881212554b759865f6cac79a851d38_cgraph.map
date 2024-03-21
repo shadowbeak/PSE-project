@@ -1,0 +1,17 @@
+<map id="TiXmlNode::LinkEndChild" name="TiXmlNode::LinkEndChild">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,172,108"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#adcb070acefcbaedaa0673d82e530538b" title=" " alt="" coords="220,19,390,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,78,240,48,242,53,138,83"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_document.html#a735c23e318597b920c94eae77fa206de" title=" " alt="" coords="221,81,389,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,92,205,92,205,97,172,97"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_node.html#a0f4dd916b2afc2ab2f1a84f3e2b8fd5d" title=" " alt="" coords="246,132,364,159"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="149,106,231,125,230,131,148,111"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#a82fb1921862d1619dd302d00e2bdc280" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="441,5,604,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,24,425,22,426,27,391,29"/>
+<area shape="rect" id="Node000005" href="$struct_ti_xml_cursor.html#a1e6fa622b59dafb71b6efe595105dcdd" title=" " alt="" coords="459,56,587,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="388,82,443,76,443,81,389,88"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_parsing_data.html#af293019e0dd114e20d64e0abd0e36d7d" title=" " alt="" coords="438,107,607,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="389,102,423,106,422,111,388,107"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_parsing_data.html#a65cee8ab77a36c605db08c84b4c30a7d" title=" " alt="" coords="438,157,607,184"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="359,106,391,118,439,143,457,150,455,155,437,148,389,122,357,111"/>
+</map>

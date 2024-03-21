@@ -1,0 +1,19 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_ti_xml_base.html" title=" " alt="" coords="5,107,88,133"/>
+<area shape="rect" id="Node000001" href="$class_ti_xml_attribute.html" title=" " alt="" coords="136,81,237,108"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="103,107,135,101,136,106,104,112"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html" title=" " alt="" coords="145,132,228,159"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="103,128,145,135,144,141,103,133"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_comment.html" title=" " alt="" coords="290,5,398,32"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="231,121,235,118,250,99,258,81,267,62,283,42,301,30,304,35,287,46,271,65,263,83,255,102,239,122,235,125"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_declaration.html" title=" " alt="" coords="285,56,402,83"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="227,122,236,118,284,92,309,81,311,86,286,97,238,122,230,127"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_document.html" title=" " alt="" coords="288,107,399,133"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="242,134,287,126,288,132,243,139"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_element.html" title=" " alt="" coords="294,157,394,184"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="243,152,293,160,292,165,243,157"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_text.html" title=" " alt="" coords="305,208,382,235"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="228,164,286,194,311,205,309,210,284,198,225,169"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_unknown.html" title=" " alt="" coords="291,259,396,285"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="209,169,243,207,287,244,307,256,304,261,283,249,240,211,205,173"/>
+</map>

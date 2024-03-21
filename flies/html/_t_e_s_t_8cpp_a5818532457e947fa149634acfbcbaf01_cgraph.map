@@ -1,0 +1,37 @@
+<map id="TEST_F" name="TEST_F">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,208,74,235"/>
+<area shape="rect" id="Node000002" href="$class_print_system.html#a1232623bb42a5baae8e5300a88cc015a" title="Leest gegevens uit een bestand." alt="" coords="122,208,269,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,219,106,219,106,224,74,224"/>
+<area shape="rect" id="Node000003" href="$class_print_system.html#a718f0ca76e7304469e4913c7bf725c20" title="Controleert het gehele systeem." alt="" coords="323,31,504,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="201,206,243,139,276,100,315,67,325,62,327,66,319,72,280,104,247,143,206,209"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_node.html#a708e7f953df61d4d2d12f73171550a4b" title="Delete all the children of this node. Does not affect &#39;this&#39;." alt="" coords="354,81,474,108"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="207,206,252,162,283,138,316,118,337,108,340,113,318,122,286,143,256,166,211,210"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_document.html#a03d596f13b24ebae712b2c42b019a5ab" title="Contains a textual (english) description of the error if one occurs." alt="" coords="325,132,502,159"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="225,205,316,168,339,161,341,166,318,173,227,210"/>
+<area shape="rect" id="Node000009" href="$_print_system_utils_8cpp.html#a130303f5208c2b21b60de415ccc22f98" title="Controleert of een bestand bestaat." alt="" coords="374,183,453,209"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="269,210,358,200,359,205,269,215"/>
+<area shape="rect" id="Node000010" href="$class_ti_xml_node.html#a12c973e1da9e90a178924b8ea5a5f4d1" title="Convenience function to get through elements." alt="" coords="317,233,510,260"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="269,227,302,231,301,236,269,232"/>
+<area shape="rect" id="Node000014" href="$class_ti_xml_document.html#a4c852a889c02cf251117fd1d9fe1845f" title=" " alt="" coords="330,308,498,335"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="228,233,370,299,368,304,226,238"/>
+<area shape="rect" id="Node000016" href="$class_print_system.html#a5f897fdcd5c13d90ffa2c98394774501" title="Leest een afdrukapparaat uit een XML&#45;element." alt="" coords="329,359,498,385"/>
+<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="208,233,251,288,283,318,318,344,329,350,327,355,316,349,279,322,247,291,204,237"/>
+<area shape="rect" id="Node000017" href="$class_print_system.html#a920db7da06b2a0028ba1df46b2a078a8" title="Leest een printtaak uit een XML&#45;element." alt="" coords="338,409,489,436"/>
+<area shape="poly" id="edge18_Node000002_Node000017" title=" " alt="" coords="205,234,220,267,244,311,277,357,319,395,326,400,323,404,315,399,273,360,239,314,215,270,200,236"/>
+<area shape="rect" id="Node000004" href="$class_print_system.html#a5d43310e4bbf19bb95cc03e4d887be3e" title="Controleert de afdrukapparaten." alt="" coords="558,5,740,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="505,32,542,27,543,33,505,37"/>
+<area shape="rect" id="Node000006" href="$class_print_system.html#a46263d69fec72681c40fd224408c45a3" title="Controleert de printtaken." alt="" coords="567,56,731,83"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="505,51,552,56,551,62,505,56"/>
+<area shape="rect" id="Node000005" href="$_print_system_utils_8cpp.html#a52ce48e83d76d3a35a89530e96736dca" title=" " alt="" coords="788,31,868,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="740,29,773,34,772,39,740,34"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="731,55,772,49,773,54,732,60"/>
+<area shape="rect" id="Node000011" href="$class_ti_xml_node.html#ae4fc3b6726cc9593784e1b622af249d5" title="The first child of this node. Will be null if there are no children." alt="" coords="576,169,722,196"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="467,230,510,219,583,198,585,203,511,224,469,235"/>
+<area shape="rect" id="Node000012" href="$class_ti_xml_node.html#a3db05b0249218e94fd41c766df87426c" title="Navigate to a sibling node." alt="" coords="571,220,727,247"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="511,239,555,236,556,241,511,244"/>
+<area shape="rect" id="Node000013" href="$class_ti_xml_node.html#ad05bc141115b9e49f5ab2ee72cf6cfd1" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="573,271,725,297"/>
+<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="502,258,558,267,557,272,501,263"/>
+<area shape="poly" id="edge15_Node000014_Node000014" title=" " alt="" coords="377,309,370,299,375,289,390,283,414,281,440,284,453,290,451,295,438,289,414,287,391,289,378,293,375,299,381,306"/>
+<area shape="rect" id="Node000015" href="$class_ti_xml_node.html#a3b260dd22313f310c0acb2e68ada6f5b" title=" " alt="" coords="587,321,711,348"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="498,323,572,328,572,333,498,329"/>
+</map>

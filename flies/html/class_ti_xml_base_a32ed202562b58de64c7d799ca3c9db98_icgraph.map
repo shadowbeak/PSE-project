@@ -1,0 +1,9 @@
+<map id="TiXmlBase::EncodeString" name="TiXmlBase::EncodeString">
+<area shape="rect" id="Node000001" title=" " alt="" coords="190,56,358,83"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_text.html#a75f6895906333894e2574cc8cf77ea79" title=" " alt="" coords="17,5,130,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,54,129,35,130,30,204,49"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_attribute.html#a5c8f72a7d1a49972434d45f4c2889e0e" title=" " alt="" coords="5,56,142,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,72,142,72,142,67,174,67"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_printer.html#a0857c5d32c59b9a257f9a49cb9411df5" title="Visit a text node." alt="" coords="11,107,136,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="204,90,130,109,129,103,203,85"/>
+</map>

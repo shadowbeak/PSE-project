@@ -1,0 +1,19 @@
+<map id="operator+" name="operator+">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,82,133"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_string.html#ad44b21700d2ec24a511367b222b643fb" title=" " alt="" coords="130,107,266,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,117,114,117,114,123,82,123"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_string.html#a5db17f8314ffe2a89df0f0eb6c2a4bf5" title=" " alt="" coords="504,157,634,184"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="83,130,130,143,226,157,323,165,489,169,489,175,322,170,225,162,129,148,81,136"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_string.html#a88ecf9f0f00cb5c67b6b637958d7049c" title=" " alt="" coords="314,56,449,83"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="81,105,129,92,217,79,299,71,299,76,217,84,130,97,83,110"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_string.html#a0ca248f026e698f79b8aa4c9ab8e1571" title=" " alt="" coords="497,107,641,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,117,482,117,482,123,266,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,127,489,157,489,163,266,132"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="248,103,315,85,316,90,250,109"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="435,81,503,100,502,105,433,86"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="402,81,445,111,499,143,511,149,509,154,496,148,442,116,399,85"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_string.html#a1ab72f7ca9911674105dac346793bb9c" title=" " alt="" coords="509,56,629,83"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="450,67,494,67,494,72,450,72"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_string.html#aa392cbc180752a79f007f4f9280c7762" title=" " alt="" coords="507,5,631,32"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="433,53,502,34,503,39,435,58"/>
+</map>

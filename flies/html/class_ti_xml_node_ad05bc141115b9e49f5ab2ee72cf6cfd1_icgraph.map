@@ -1,0 +1,31 @@
+<map id="TiXmlNode::ToElement" name="TiXmlNode::ToElement">
+<area shape="rect" id="Node000001" title="Cast to a more defined type. Will return null if not of the requested type." alt="" coords="625,157,778,184"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#a12c973e1da9e90a178924b8ea5a5f4d1" title="Convenience function to get through elements." alt="" coords="379,132,572,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="610,163,572,159,573,154,610,158"/>
+<area shape="rect" id="Node000012" href="$class_ti_xml_node.html#aab23fca4c2455c1d926c35d85a663842" title="Convenience function to get through elements." alt="" coords="379,183,572,209"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="610,184,573,188,572,182,610,178"/>
+<area shape="rect" id="Node000013" href="$class_ti_xml_node.html#ac6105781c913a42aa7f3f17bd1964f7c" title=" " alt="" coords="373,56,577,83"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="655,153,506,86,508,81,657,148"/>
+<area shape="rect" id="Node000014" href="$class_ti_xml_node.html#a22def4746238abaee042f99b47ef3c94" title=" " alt="" coords="373,233,577,260"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="657,193,578,224,539,235,537,230,576,219,655,188"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_handle.html#afccc59d8a0daa8c5d78474fbed430ddb" title=" " alt="" coords="135,56,312,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,129,324,97,283,86,284,81,326,92,422,124"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_handle.html#a57a639ab0ac99ff9358f675a1b73049a" title=" " alt="" coords="135,5,312,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="424,127,371,97,357,83,348,70,338,58,324,46,299,35,301,30,326,42,342,54,352,67,361,79,375,93,426,123"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_handle.html#af0643f8683f3f2b779b8c9d78c67b2c0" title="Return a handle to the first child element." alt="" coords="122,157,325,184"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="363,159,326,163,325,158,363,154"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_handle.html#a3eaf2d2d4c087cd8a48da261042e75bc" title="Return a handle to the first child element with the given name." alt="" coords="122,208,325,235"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="395,166,374,173,350,186,326,198,290,210,289,205,324,194,348,181,372,168,393,161"/>
+<area shape="rect" id="Node000007" href="$class_print_system.html#a1232623bb42a5baae8e5300a88cc015a" title="Leest gegevens uit een bestand." alt="" coords="150,259,297,285"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="382,168,375,173,359,191,351,210,344,230,327,249,298,263,296,258,323,245,339,227,347,208,354,188,371,169,379,164"/>
+<area shape="rect" id="Node000010" href="$class_ti_xml_document.html#abcbfd3e831b2f2d46732c7b4e4076b90" title=" " alt="" coords="126,309,321,336"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="379,169,375,173,362,187,355,202,352,234,348,267,340,283,327,299,309,311,306,307,323,295,336,281,343,266,346,234,350,201,358,185,371,169,376,165"/>
+<area shape="rect" id="Node000011" href="$class_ti_xml_document.html#ab7d8c7025dd910259f1fea16fc72cda0" title=" " alt="" coords="126,107,321,133"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="363,137,321,132,321,127,363,131"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="15,233,64,260"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="134,262,64,253,65,247,135,257"/>
+<area shape="rect" id="Node000009" href="$_t_e_s_t_8cpp.html#a5818532457e947fa149634acfbcbaf01" title=" " alt="" coords="5,284,74,311"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="135,287,75,295,74,290,134,282"/>
+<area shape="poly" id="edge13_Node000013_Node000003" title=" " alt="" coords="357,72,312,72,312,67,357,67"/>
+<area shape="poly" id="edge14_Node000013_Node000004" title=" " alt="" coords="390,55,293,35,294,30,391,50"/>
+</map>

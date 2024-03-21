@@ -1,0 +1,49 @@
+<map id="TiXmlDocument::SetError" name="TiXmlDocument::SetError">
+<area shape="rect" id="Node000001" title=" " alt="" coords="699,360,867,387"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_node.html#a274db3292218202805c093f66a964cb5" title=" " alt="" coords="468,5,646,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="776,345,766,283,744,202,727,159,706,118,681,79,650,46,633,35,636,30,653,42,685,76,711,115,732,157,749,200,771,281,781,344"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#a71e54e393336382bc9875f64aab5cb15" title=" " alt="" coords="463,56,651,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="773,346,759,294,735,229,699,162,676,131,650,103,620,86,623,81,653,99,680,127,703,159,740,227,764,293,778,344"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#af287a913ce46d8dbf7ef24fec69bbaf0" title=" " alt="" coords="241,107,415,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="772,346,758,300,733,245,698,191,675,167,650,148,623,133,594,122,532,109,471,106,415,109,415,103,471,100,533,104,595,117,625,128,653,143,679,163,702,188,738,243,762,299,777,344"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_node.html#a1a881212554b759865f6cac79a851d38" title=" " alt="" coords="474,157,640,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="766,348,720,277,687,238,650,205,615,187,617,182,653,200,691,234,724,274,770,345"/>
+<area shape="rect" id="Node000010" href="$class_ti_xml_document.html#a789ad2f06f93d52bdb5570b2f3670289" title=" " alt="" coords="251,208,405,235"/>
+<area shape="poly" id="edge25_Node000001_Node000010" title=" " alt="" coords="761,350,714,300,684,275,650,256,588,235,524,223,461,218,405,218,405,213,461,213,524,218,590,230,652,251,687,271,718,296,764,346"/>
+<area shape="rect" id="Node000011" href="$class_ti_xml_document.html#a41f6fe7200864d1dca663d230caf8db6" title=" " alt="" coords="15,259,183,285"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="751,353,705,324,650,300,589,285,526,274,398,262,280,261,184,266,183,261,280,256,399,257,526,268,590,279,652,295,708,319,754,348"/>
+<area shape="rect" id="Node000012" href="$class_ti_xml_element.html#ac786bce103042d3837c4cc2ff6967d41" title=" " alt="" coords="242,335,414,361"/>
+<area shape="poly" id="edge26_Node000001_Node000012" title=" " alt="" coords="683,371,414,355,414,350,684,365"/>
+<area shape="rect" id="Node000013" href="$class_ti_xml_element.html#af95c9165159fd9dfdcc5b894a3fcf85b" title=" " alt="" coords="28,411,170,437"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="684,383,171,421,171,416,683,378"/>
+<area shape="rect" id="Node000014" href="$class_ti_xml_document.html#a879cdf5e981b8b2d2ef82f2546dd28fb" title="Load a file using the given filename. Returns true if successful." alt="" coords="473,563,641,589"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="770,402,724,473,691,512,653,546,617,564,615,560,650,542,687,509,720,470,766,399"/>
+<area shape="rect" id="Node000015" href="$class_ti_xml_attribute.html#ad62774421b814894b995af3b5d231dda" title=" " alt="" coords="486,461,629,488"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="746,397,652,445,604,463,602,458,650,440,744,392"/>
+<area shape="rect" id="Node000016" href="$class_ti_xml_declaration.html#a9839ea97ed687a2b7342fd7b0f04361b" title=" " alt="" coords="248,512,408,539"/>
+<area shape="poly" id="edge23_Node000001_Node000016" title=" " alt="" coords="766,401,719,455,688,481,652,502,591,523,526,534,464,538,408,536,408,531,464,532,526,529,590,518,650,498,685,477,715,451,762,398"/>
+<area shape="rect" id="Node000017" href="$class_ti_xml_comment.html#a43bddc18ac057734b41d84653b71d3e0" title=" " alt="" coords="482,613,632,640"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="776,402,760,447,734,501,699,556,677,581,653,603,633,615,630,610,650,599,674,578,695,553,730,498,755,445,771,401"/>
+<area shape="rect" id="Node000018" href="$class_ti_xml_text.html#a8d2dcfa41fc73d3e62dacc2fcf633819" title=" " alt="" coords="498,309,617,336"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="705,359,617,339,618,333,706,353"/>
+<area shape="rect" id="Node000019" href="$class_ti_xml_unknown.html#aa51c2694e4177b5f0b5429ee5a81b58d" title=" " alt="" coords="484,664,631,691"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="779,402,766,456,742,524,705,594,681,626,653,654,632,667,630,662,650,650,677,623,701,591,737,522,761,454,774,401"/>
+<area shape="rect" id="Node000020" href="$class_ti_xml_node.html#a543208c2c801c84a213529541e904b9f" title=" " alt="" coords="474,715,640,741"/>
+<area shape="poly" id="edge27_Node000001_Node000020" title=" " alt="" coords="781,403,771,465,749,547,732,590,711,632,685,671,653,705,636,716,633,712,650,701,681,667,706,629,727,587,744,545,766,464,776,402"/>
+<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="478,156,391,137,392,131,479,151"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_element.html#ab931f2208ed76ba03465d8a1f86b5935" title=" " alt="" coords="252,157,404,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="458,173,404,173,404,168,458,168"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="479,191,392,210,391,205,478,185"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="528,196,349,336,345,332,525,192"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_element.html#a810ea8fa40844c01334e5af2a26794cb" title="Creates a new Element and returns it &#45; the returned element is a copy." alt="" coords="28,107,170,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="249,156,162,137,163,131,250,151"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_element.html#ad58d300f4cfc0016ffa6861ebb718a0b" title=" " alt="" coords="17,157,181,184"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="236,173,181,173,181,168,236,168"/>
+<area shape="rect" id="Node000009" href="$class_ti_xml_element.html#a1ca4465f3c2eac6a60e641cd7f1d9f7e" title=" " alt="" coords="5,208,193,235"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="250,191,163,210,162,205,249,185"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="250,241,163,261,162,255,249,236"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="272,369,143,413,141,407,270,364"/>
+<area shape="poly" id="edge17_Node000015_Node000013" title=" " alt="" coords="470,469,240,445,170,436,171,431,241,440,470,464"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="479,495,392,514,391,509,478,489"/>
+<area shape="poly" id="edge22_Node000018_Node000012" title=" " alt="" coords="482,334,414,341,414,336,482,328"/>
+</map>

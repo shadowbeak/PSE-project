@@ -1,0 +1,18 @@
+<map id="TiXmlBase::GetEntity" name="TiXmlBase::GetEntity">
+<area shape="rect" id="Node000001" title=" " alt="" coords="986,49,1131,75"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_base.html#a5c309eba97f91f719e7834f6a7ddaf22" title=" " alt="" coords="800,49,938,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="970,65,938,65,938,59,970,59"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_base.html#aa646c74921aa33156968b802bbf5566e" title=" " alt="" coords="606,49,752,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="784,65,752,65,752,59,784,59"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_attribute.html#ad62774421b814894b995af3b5d231dda" title=" " alt="" coords="415,23,558,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="590,53,558,49,559,43,591,48"/>
+<area shape="rect" id="Node000007" href="$class_ti_xml_text.html#a8d2dcfa41fc73d3e62dacc2fcf633819" title=" " alt="" coords="427,74,546,101"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="591,76,547,82,546,77,591,71"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_element.html#af95c9165159fd9dfdcc5b894a3fcf85b" title=" " alt="" coords="5,23,148,50"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="417,22,367,14,281,8,196,14,131,25,130,20,195,9,281,3,367,9,418,17"/>
+<area shape="rect" id="Node000006" href="$class_ti_xml_declaration.html#a9839ea97ed687a2b7342fd7b0f04361b" title=" " alt="" coords="202,23,361,50"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="399,39,361,39,361,34,399,34"/>
+<area shape="rect" id="Node000008" href="$class_ti_xml_element.html#ac786bce103042d3837c4cc2ff6967d41" title=" " alt="" coords="196,74,367,101"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="412,90,368,90,368,85,412,85"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="209,72,133,53,134,48,210,67"/>
+</map>

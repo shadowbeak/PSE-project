@@ -1,0 +1,11 @@
+<map id="TiXmlComment::Clone" name="TiXmlComment::Clone">
+<area shape="rect" id="Node000001" title="Returns a copy of this Comment." alt="" coords="5,31,155,57"/>
+<area shape="rect" id="Node000002" href="$class_ti_xml_comment.html#aaeb8a0b2d503f603879a2d04ceb54295" title=" " alt="" coords="224,5,385,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,33,209,27,209,32,155,38"/>
+<area shape="rect" id="Node000005" href="$class_ti_xml_comment.html#aaa3252031d3e8bd3a2bf51a1c61201b7" title="Constructs an empty comment." alt="" coords="203,56,406,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="155,50,188,53,187,59,155,55"/>
+<area shape="rect" id="Node000003" href="$class_ti_xml_node.html#aaadd5bb9c94f84c4472b649b95de4a0b" title=" " alt="" coords="454,5,588,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,16,438,16,438,21,385,21"/>
+<area shape="rect" id="Node000004" href="$class_ti_xml_node.html#a2a38329ca5d3f28f98ce932b8299ae90" title=" " alt="" coords="636,5,780,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="589,16,621,16,621,21,589,21"/>
+</map>
