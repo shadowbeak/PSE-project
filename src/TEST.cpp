@@ -114,13 +114,13 @@ TEST_F(TestPrintSystem, checkEmptyReport){
 //assignTests:
 TEST_F(TestPrintSystem, checkAssignment) {
     system->Readfile("xmlTests/checkAssignment.xml");
-    const std::string regex = "Assertion failed: Geen apparaten gevonden, file C:/Users/adamb/CLionProjects/PSE-projectxe/src/PrintSystem.cpp, line 136";
+    const std::string regex = "Assertion failed: Geen apparaten gevonden, file C:/Users/adamb/CLionProjects/PSE-projectxe/src/PrintSystem.cpp, line 126";
     EXPECT_DEATH(system->assignALL(), regex);
 }
 
 //fileOpeningTest:
 TEST_F(TestPrintSystem, cantOpen){
-    const std::string regex = "Assertion failed: Bestand bestaat niet., file C:/Users/adamb/CLionProjects/PSE-projectxe/src/PrintSystem.cpp, line 47";
+    const std::string regex = "Assertion failed: Bestand bestaat niet., file C:/Users/adamb/CLionProjects/PSE-projectxe/src/PrintSystem.cpp, line 42";
     EXPECT_DEATH(system->Readfile("xmlTests/FileDoesNotExist.xml"), regex);
 }
 

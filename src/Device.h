@@ -6,7 +6,7 @@
 #include "Job.h"
 #include <deque>
 using namespace std;
--// Een klasse die een apparaat voorstelt in het printsysteem
+// Een klasse die een apparaat voorstelt in het printsysteem
 
 class Device {
 private:
