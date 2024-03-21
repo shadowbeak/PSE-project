@@ -1,0 +1,2 @@
+Office_Printer (CO2: 4g/page):
+	No jobs

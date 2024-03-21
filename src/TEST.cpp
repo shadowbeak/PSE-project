@@ -14,13 +14,22 @@ protected:
     }
 };
 
-/*system->Readfile("xmlTests/NoPageCount.xml");
 
-system->getDevices()[0]->addJob(system->getJobs()[0]);
-system->getDevices()[0]->addJob(system->getJobs()[1]);
+//check inconsistency:
+/*TEST_F(TestPrintSystem, InconsistentSystem){
+    system->Readfile("xmlTests/InconsistentSystemTest.xml");
+    EXPECT_FALSE(system->checkSystem());
+}
 
-std::string NoPageCountReport = system->printReport();
-EXPECT_TRUE(FileCompare(NoPageCountReport, "TESTS/NPCtest.txt"));$*/
+TEST_F(TestPrintSystem, InconsistentDevices){
+    system->Readfile("xmlTests/InconsistentDevicesTest.xml");
+    EXPECT_TRUE(system->checkDevices());
+}
+
+TEST_F(TestPrintSystem, InconsistentJobs){
+    system->Readfile("xmlTests/InconsistentJobsTest.xml");
+    EXPECT_FALSE(system->checkJobs());
+}*/
 
 
 //Jobs:
@@ -57,39 +66,32 @@ TEST_F(TestPrintSystem, NoUserName){
 }
 
 
-
 //Devices:
 TEST_F(TestPrintSystem, NoSpeed) {
     system->Readfile("xmlTests/NoSpeed.xml");
     EXPECT_TRUE(system->getJobs().size() == 1);
     EXPECT_TRUE(system->getDevices().size() == 1);
-
 }
 
-TEST_F(TestPrintSystem, SpeedIsNeg) {           //---------------------
+TEST_F(TestPrintSystem, SpeedIsNeg) {
     system->Readfile("xmlTests/SpeedIsNeg.xml");
     EXPECT_TRUE(system->getJobs().size() == 2);
     EXPECT_TRUE(system->getDevices().empty() );
-
 }
-
-
 
 TEST_F(TestPrintSystem, NoEmission){
     system->Readfile("xmlTests/NoEmission.xml");
     EXPECT_TRUE(system->getJobs().size() == 2);
     EXPECT_TRUE(system->getDevices().size() == 1);
-
-
 }
 
-TEST_F(TestPrintSystem, EmissionIsNeg){             //--------------------------
+TEST_F(TestPrintSystem, EmissionIsNeg){
     system->Readfile("xmlTests/EmissionIsNeg.xml");
     EXPECT_TRUE(system->getJobs().size() == 2);
     EXPECT_TRUE(system->getDevices().empty());
 }
 
-TEST_F(TestPrintSystem, NoName){                   //-----------------------------
+TEST_F(TestPrintSystem, NoName){
     system->Readfile("xmlTests/NoName.xml");
     EXPECT_TRUE(system->getJobs().size() == 2);
     EXPECT_TRUE(system->getDevices().size() == 1);
@@ -98,10 +100,38 @@ TEST_F(TestPrintSystem, NoName){                   //---------------------------
 
 //Reports:
 TEST_F(TestPrintSystem, checkPrintReport){
-    system->Readfile("xmlTests/NoPageCount.xml");
-
-
+    system->Readfile("xmlTests/ReportPrintTest.xml");
+    system->assignALL();
+    std::string fileReport = system->printReport();
+    EXPECT_TRUE(FileCompare(fileReport, "TEST/ReportPrintTest.txt"));
 }
+
+TEST_F(TestPrintSystem, checkEmptyReport){
+    std::string fileReport = system->printReport();
+    EXPECT_TRUE(FileCompare(fileReport, "TEST/EmptyReport.txt"));
+}
+
+//assignTests:
+TEST_F(TestPrintSystem, checkAssignment) {
+    system->Readfile("xmlTests/checkAssignment.xml");
+    const std::string regex = "Assertion failed: Geen apparaten gevonden, file C:/Users/adamb/CLionProjects/PSE-projectxe/src/PrintSystem.cpp, line 136";
+    EXPECT_DEATH(system->assignALL(), regex);
+}
+
+//fileOpeningTest:
+TEST_F(TestPrintSystem, cantOpen){
+    const std::string regex = "Assertion failed: Bestand bestaat niet., file C:/Users/adamb/CLionProjects/PSE-projectxe/src/PrintSystem.cpp, line 47";
+    EXPECT_DEATH(system->Readfile("xmlTests/FileDoesNotExist.xml"), regex);
+}
+
+
+
+
+
+
+
+
+
 
 
 

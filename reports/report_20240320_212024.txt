@@ -1,0 +1,5 @@
+Office_Printer (CO2: 4g/page):
+	* Current:
+		[#995105680|]
+	* Queue:
+		[#-6|Directeur]

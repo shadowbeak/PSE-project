@@ -1,0 +1,5 @@
+Printer "Office_Printer99" finished job:
+	Number: 12354
+	Submitted by "Adam"
+	2 pages
+

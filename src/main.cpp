@@ -8,7 +8,7 @@ int main() {
     PrintSystem system;
     system.Readfile("xmlTests/ReportPrintTest.xml");
     system.assignALL();
-    system.processFirstJob();
+    //system.processFirstJob();
     system.printReport();
 
     return 0;
